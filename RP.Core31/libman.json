@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery@3.4.1",
+      "destination": "wwwroot/lib/jquery/3.4.1/",
+      "files": [
+        "jquery.min.js",
+        "jquery.js",
+        "jquery.min.map"
+      ]
+    },
+    {
+      "library": "bootstrap@4.5.3",
+      "destination": "wwwroot/lib/bootstrap/4.5.3/",
+      "files": [
+        "js/bootstrap.min.js",
+        "css/bootstrap.css",
+        "css/bootstrap.css.map",
+        "css/bootstrap.min.css",
+        "css/bootstrap.min.css.map",
+        "css/bootstrap-reboot.css",
+        "css/bootstrap-reboot.css.map",
+        "css/bootstrap-reboot.min.css",
+        "css/bootstrap-reboot.min.css.map",
+        "css/bootstrap-grid.min.css.map",
+        "css/bootstrap-grid.min.css",
+        "css/bootstrap-grid.css.map",
+        "css/bootstrap-grid.css",
+        "js/bootstrap.bundle.js",
+        "js/bootstrap.bundle.js.map",
+        "js/bootstrap.bundle.min.js",
+        "js/bootstrap.bundle.min.js.map",
+        "js/bootstrap.js",
+        "js/bootstrap.js.map",
+        "js/bootstrap.min.js.map"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "animate.css@4.1.1",
+      "destination": "wwwroot/lib/animate.css/4.1.1/"
+    }
+  ,
+{
+  "library": "font-awesome@5.10.2",
+  "destination": "wwwroot/lib/font-awesome/5.10.2/",
+  "files": [
+    "css/all.min.css",
+    "css/all.css",
+    "js/all.js",
+    "js/all.min.js",
+    "webfonts/fa-brands-400.eot",
+    "webfonts/fa-brands-400.svg",
+    "webfonts/fa-brands-400.ttf",
+    "webfonts/fa-brands-400.woff",
+    "webfonts/fa-brands-400.woff2",
+    "webfonts/fa-regular-400.eot",
+    "webfonts/fa-regular-400.svg",
+    "webfonts/fa-regular-400.ttf",
+    "webfonts/fa-regular-400.woff",
+    "webfonts/fa-regular-400.woff2",
+    "webfonts/fa-solid-900.eot",
+    "webfonts/fa-solid-900.svg",
+    "webfonts/fa-solid-900.ttf",
+    "webfonts/fa-solid-900.woff",
+    "webfonts/fa-solid-900.woff2",
+    "sprites/brands.svg",
+    "sprites/regular.svg",
+    "sprites/solid.svg"
+  ]
+}
+]
+}

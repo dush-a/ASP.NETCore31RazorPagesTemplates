@@ -1,0 +1,127 @@
+﻿@using Microsoft.Extensions.Options
+@using RP.Core31.AppData.Models
+@inject IOptions<BusinessInfo> businessOptions
+@{
+    var optnBusiness = businessOptions.Value;
+}
+<!DOCTYPE html>
+<html lang="en-au">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="business" content="@optnBusiness.BusinessName @optnBusiness.ABN" />
+    <title>
+
+        @{
+            if (ViewData["Title"] != null & ViewData["Title"].ToString().Trim() != "")
+            {
+                @optnBusiness.BusinessName @ViewData["Title"];
+            }
+            else
+            {
+                @optnBusiness.BusinessName
+            }
+        }
+    </title>
+    @RenderSection("MetaTags", required: false)
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/animate.css/4.1.1/animate.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/5.10.2/css/all.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/4.5.3/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+              asp-fallback-href="~/lib/animate.css/4.1.1/animate.min.css"
+              integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+              integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"
+              asp-fallback-href="~/lib/font-awesome/5.10.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" 
+              integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" 
+              crossorigin="anonymous" referrerpolicy="no-referrer"
+              asp-fallback-href="~/lib/bootstrap/4.5.3/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+
+    @RenderSection("StyleSheets", required: false)
+
+</head>
+<body>
+    <header class="fixed-top" >
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-our-color border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">@optnBusiness.BusinessName</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-page="/About">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-9 pt-3">
+        <main role="main" class="pb-3 mt-5">
+            @RenderBody()
+        </main>
+        <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button" title="goto top button"><i class="fas fa-arrow-alt-circle-up"></i></a>
+    </div>
+
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - RP.Core31 - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>*@
+
+    <partial name="_Footer" />
+    <partial name="_MicroDataMain" />
+
+    <environment include="Development">
+        <script src="~/lib/jquery/3.4.1/jquery.js"></script>
+        <script src="~/lib/font-awesome/5.10.2/js/all.js"></script>
+        <script src="~/lib/bootstrap/4.5.3/js/bootstrap.bundle.js"></script>
+        <script src="~/js/viewportSize.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" 
+                integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" 
+                crossorigin="anonymous" referrerpolicy="no-referrer"
+                asp-fallback-src="~/lib/jquery/3.4.1/jquery.min.js"
+                asp-fallback-test="window.jQuery" >
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js"
+                integrity="sha512-/J1T4RfwfHmP/1jDH9L/1Ax51Q21YCvMJq/ynj11hTEBwguvGJ2L72yVirJn1YQWHeZx+aIi1y5zgRueUdYn1A=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"
+                asp-fallback-src="~/lib/font-awesome/5.10.2/js/all.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.bundle.min.js"
+                integrity="sha512-iceXjjbmB2rwoX93Ka6HAHP+B76IY1z0o3h+N1PeDtRSsyeetU3/0QKJqGyPJcX63zysNehggFwMC/bi7dvMig=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"
+                asp-fallback-src="~/lib/bootstrap/4.5.3/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/js/viewportSize.min.js"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

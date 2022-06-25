@@ -1,0 +1,108 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h2>Base Project Template For ASP.NET Core @Model.DotNetCoreVersion Razor Pages Web Application  </h2>
+    <h3>This template has no user Authentication</h3>
+    <p>Also It uses the bootstrap 4.5.3 framework as default UI. </p>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core" rel="noreferrer">building Web apps with ASP.NET Core</a>.</p>
+
+
+    <p>The template extends the existing Visual Studio  ASP.NET Core Razor pages web template project with most helpful features to build a professional web site.</p>
+</div>
+
+<div class="card text-center mt-5">
+    <div class="card-header">
+        <h1>Additional features included in this template: </h1>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+            This project also demonstrates how to add commonly used custom UI features in the Visual Studio 2019 Community edition.
+        </p>
+    </div>
+    <div class="card-footer text-muted">
+        <p class="card-text">
+           But this template does NOT demonstrates how to add custom user data to a generated project in the Visual Studio 2019 Comunity edition. Please check the other template that comes with user authentication enabled. And it will show the practices used to meet some of the GDPR requirements added custom user data, ie user can delete own user data entered any time.
+        </p>
+    </div>
+</div>
+
+<div class="card-deck mt-5">
+    <div class="card text-center">
+        <div class="card-header">
+            <h2 class="card-title">Scroll to top Button </h2>
+        </div>
+        <div class="card-body">
+            <p class="card-text">Added necessary code to show up scroll to top button at the bottom left corner of the page.</p>
+            <a href="#" class="btn btn-dark btn-lg scroll-to-top" role="button" title="goto top button"><i class="fas fa-arrow-alt-circle-up fa-2x"></i></a>
+        </div>
+        @*<div class="card-footer text-muted">
+
+            </div>*@
+    </div>
+    <div class="card text-center">
+        <div class="card-header">
+            <h2 class="card-title">Use System Variables</h2>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                Shows how to use system variables in the Razor pages. The demonstration can be found in the
+                <a class="btn btn-primary text-light" asp-area="" asp-page="/About">About</a> page.
+            </p>
+
+        </div>
+        @*<div class="card-footer text-muted">
+
+            </div>*@
+    </div>
+
+</div>
+
+<div class="card-deck  mt-3">
+
+    <div class="card text-center">
+        <div class="card-header">
+            <h2 class="card-title">Font Awesom icons</h2>
+        </div>
+        <div class="card-body">
+            <p class="card-text">Can easily add font-awesome icons.</p>
+            <p>
+                <span class="btn btn-info">
+                    <i class="fas fa-address-book fa-4x"></i>
+                </span>&nbsp;&nbsp;
+                <span class="btn btn-default">
+                    <i class="fas fa-cart-plus fa-4x"></i>
+                </span>&nbsp;&nbsp;
+                <span class="btn btn-success">
+                    <i class="fas fa-birthday-cake fa-4x"></i>
+                </span>&nbsp;&nbsp;
+                <span class="btn btn-warning">
+                    <i class="fas fa-hammer fa-4x"></i>
+                </span>
+
+            </p>
+        </div>
+        @*<div class="card-footer text-muted">
+
+            </div>*@
+    </div>
+    <div class="card text-center">
+        <div class="card-header">
+                <h2 class="card-title">Navbar Shrink on Scroll down</h2>
+            </div>
+        <div class="card-body">
+            <h5 class="card-title">Navbar shrink and expand</h5>
+            <p class="card-text">NavBar shrinks when the user scroll down the page. If the user scroll up to the top, or use scroll up button, it will expand back.  </p>
+        </div>
+        @*<div class="card-footer text-muted">
+
+            </div>*@
+    </div>
+</div>
+
+
+
