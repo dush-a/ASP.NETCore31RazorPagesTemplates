@@ -1,13 +1,44 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
+
+html {
+    font-size: 16px;
 }
 
-/* Provide sufficient contrast against white background */
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", -apple-system, BlinkMacSystemFont;
+}
+
+.main-wrapper {
+    
+    padding: 0.5em 0.5em 0 0.5em;
+}
+
+    .main-wrapper h1 {
+        font-weight: 600;
+        font-family: "Segoe UI", Roboto, "Helvetica", Arial, sans-serif;
+        color: #82143c;
+    }
+
+.main-panel::before {
+    z-index: 0;
+    content: "";
+    background: -webkit-gradient(linear,left top,left bottom,from(#c374ff),color-stop(90%,#faf9fd));
+    background: linear-gradient(180deg,#c374ff 0%,#faf9fd 90%);
+    /*  position: absolute;
+        left: 0;
+        width: 100%;
+        top: 0;*/
+    height: 140%;
+    width: 100%;
+}
+
+.header {
+    padding-top: 100px;
+}
+
+
 a {
     color: #0366d6;
 }
@@ -16,24 +47,6 @@ a {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-    font-size: 14px;
-}
-
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
 }
 
 .border-top {
@@ -52,27 +65,6 @@ button.accept-policy {
     font-size: 1rem;
     line-height: inherit;
 }
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-/* Margin bottom by footer height */
-/*body {
-  
-  margin-bottom: 60px;
-}*/
-
-/*.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;*/ /* Vertically center the text there */
-/*}*/
 
 /*#region Custom Rules ################################################################# */
 /*#region bootstrap extended */
@@ -117,7 +109,6 @@ html {
     padding-top: 5.5rem !important;
 }
 
-
 /*#endregion bootstrap extended */
 
 h1.display-4 {
@@ -150,17 +141,23 @@ p {
 
 /*#region Navbar */
 
-.navbar .container {
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/*.navbar .container {
     font-size: 18px;
     font-weight: 300;
 }
-
+*/
 .nav-height {
     min-height: 100px;
     padding-top: 15px;
 }
 
-.navbar-brand {
+.navbar-brand, .nav-link {
     font-size: 18px;
 }
 
@@ -170,10 +167,12 @@ p {
     transition: all 0.5s ease;
 }
 
-nav .scroll-link-shrink, .navbar-toggler-shrink {
-    font-size: 14px !important;
+.navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+    font-size: 17px !important;
     color: #ecf0f1;
     font-weight: 300;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 .nav .navbar-toggler-shrink {
@@ -185,14 +184,51 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
     background-color: #820578;
 }
 
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+li.nav-item {
+    padding-bottom: 5px;
+}
+
 /*#endregion Navbar */
+
+/*#region Header carousel */
+
+.carousel-caption p {
+    display: block;
+}
+
+.carousel .carousel-item {
+    height: 690px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    min-height: 690px;
+}
+
+.carousel h1.display-4 {
+    padding-top: 15px;
+}
+
+/*#endregion header carousel*/
 
 /*#region custom footer */
 
-.footer-wrap {
-    padding: 3em 0 2em 0;
+.footer-wrapper {
     background-color: #31002d;
+    /*clip-path: polygon(0 115px, 100% 0, 100% 100%, 0% 100%);*/
 }
+
+.footer-wrapper {
+    padding: 3em 0.5em 2em 0.5em;
+}
+
 
 .footer .contact-info, .footer .footer-other-links {
     color: white;
@@ -211,20 +247,11 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
     color: white;
 }
 
-/*.footer .fas {
-    padding-right: 20px;
-    color: #ff6a00;
+
+.footer ol svg, .footer ol span, .footer ul svg, .footer ul span {
+    margin-right: .5em;
+    color: #f332e4;
 }
-
-.footer ol, .footer ul span {
-    padding-right: 10px;
-    color: #ff6a00;
-}*/
-
-    .footer ol svg, .footer ol span, .footer ul svg, .footer ul span {
-        margin-right: .5em;
-        color: #f332e4;
-    }
 
 .footer .privacy {
     text-align: center;
@@ -246,8 +273,12 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
     -moz-animation: bounce 5s ease infinite;
     animation: bounce 5s ease infinite;
 }
+    .back-to-top.btn-dark, .scroll-to-top.btn-dark {
+        border-color: #992d58
+    }
 
 .scroll-to-top {
+    background-color: black;
     color: #f332e4;
     -webkit-animation: bounce 5s ease infinite;
     -moz-animation: bounce 5s ease infinite;
@@ -267,40 +298,69 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
     overflow-wrap: break-word;
     hyphens: auto;
 }
+.card-footer.text-muted {
+    font-size: medium;
+}
 
-@media (min-width: 576px) {
-    .navbar .container {
-        font-size: 18px;
-    }
+@media (min-width: 320px) {
+    /*#region carousel */
 
-    .navbar-brand {
-        font-size: 18px;
-    }
-
-    .nav-height-shrink {
-        min-height: 40px;
-    }
-
-    nav .scroll-link-shrink, .navbar-toggler-shrink {
-        font-size: 16px !important;
-        font-weight: 300;
-    }
-
-    .carousel-caption p {
-        display: block;
-    }
-
-    /*carousel*/
     .carousel .carousel-item {
-        height: 400px;
+        height: 600px;
     }
 
     .carousel-item img {
-        position: absolute;
-        object-fit: cover;
-        left: 0;
-        min-height: 400px;
+        min-height: 600px;
     }
+
+    /*#endregion carousel */
+}
+
+@media (min-width: 460px) {
+    /*#region carousel */
+
+    .carousel .carousel-item {
+        height: 500px;
+    }
+
+    .carousel-item img {
+        min-height: 500px;
+    }
+
+    /*#endregion carousel */
+}
+
+@media (min-width: 576px) {
+    html {
+        font-size: 17px;
+    }
+
+    .main-panel {
+        padding: 0.5em 1em 0 1em;
+        background-image: url("../img/top-bg.svg");
+        background-size:cover;
+    }
+    .footer-wrapper {
+        padding: 3em 1em 2em 1em;
+    }
+
+    .navbar .container {
+        font-size: 20px;
+    }
+
+    .navbar-brand, .nav-link {
+        font-size: 20px;
+    }
+
+    .nav-height-shrink {
+        min-height: 55px;
+    }
+
+    .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+        font-size: 18px !important;
+        font-weight: 400;
+    }
+   
 
     h1.display-4 {
         font-size: 40px;
@@ -312,6 +372,7 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
 
     h1 {
         font-size: 27px;
+
     }
 
     h2 {
@@ -327,7 +388,7 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
     }
 
     p {
-        font-size: 1.1rem;
+        font-size: 17px;
     }
 
     .card-deck .card {
@@ -345,31 +406,58 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
         padding: 80px 0;
     }
 
-        #horizontal-features:hover {
-            /*fallback - background for browsers that doesn't support rgba*/
-            background: linear-gradient( rgb(96,96,96) ), url(../images/banner03-576x687.jpg) no-repeat;
-            background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../images/banner03-576x687.jpg) no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
+    #horizontal-features:hover {
+        /*fallback - background for browsers that doesn't support rgba*/
+        background: linear-gradient( rgb(96,96,96) ), url(../images/banner03-576x687.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../images/banner03-576x687.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    /*#region Carousel */
+
+    .carousel-caption p {
+        display: block;
+    }
+
+    .carousel .carousel-item {
+        height: 400px;
+    }
+
+    .carousel-item img {
+        position: absolute;
+        object-fit: cover;
+        left: 0;
+        min-height: 400px;
+    }
+
+    /*#endregion Carousel*/
 }
 
 @media (min-width: 768px) {
-    .navbar .container {
-        font-size: 20px;
+    html {
+        font-size: 18px;
     }
 
-    .navbar-brand {
-        font-size: 20px;
+    .main-wrapper {
+        padding: 0.5em 1.5em 0 1.5em;
+    }
+    .footer-wrapper {
+        padding: 3em 1.5em 2em 1.5em;
+    }
+
+    .navbar .container, .navbar-brand, .nav-link {
+        font-size: 21px;
+        font-weight: 500;
     }
 
     .nav-height-shrink {
-        min-height: 42px;
+        min-height: 57px;
     }
 
-    nav .scroll-link-shrink, .navbar-toggler-shrink {
-        font-size: 18px !important;
-        font-weight: 300;
+    .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+        font-size: 19px !important;
+        font-weight: 400;
     }
 
     .carousel h1.display-4 {
@@ -425,6 +513,33 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
 
 @media (min-width: 992px) {
 
+    html {
+        font-size: 19px;
+    }
+
+    .main-wrapper {
+        padding: 0.5em 2em 0 2em;
+    }
+    .footer-wrapper {
+        padding: 3em 2em 2em 2em;
+    }
+
+    /*#region navbar */
+
+    .navbar .container, .navbar-brand, .nav-link {
+        font-size: 22px;
+    }
+
+    .nav-height-shrink {
+        min-height: 60px;
+    }
+
+    .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+        font-size: 20px !important;
+    }
+
+    /*#endregion navbar*/
+
     .jumbo h1.display-1 {
         font-size: 70px;
     }
@@ -451,7 +566,7 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
     }
 
     p {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .card-deck .card {
@@ -460,6 +575,33 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
 }
 
 @media (min-width: 1200px) {
+
+    html {
+        font-size: 20px;
+    }
+
+    .main-wrapper {
+        padding: 0.5em 2.5em 0 2.5em;
+    }
+    .footer-wrapper {
+        padding: 3em 2.5em 2em 2.5em;
+    }
+
+    /*#region navbar */
+
+    .navbar .container, .navbar-brand, .nav-link {
+        font-size: 23px;
+    }
+
+    .nav-height-shrink {
+        min-height: 62px;
+    }
+
+    .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+        font-size: 21px !important;
+    }
+
+    /*#endregion navbar*/
 
     .jumbo h1.display-1 {
         font-size: 90px;
@@ -482,11 +624,47 @@ nav .scroll-link-shrink, .navbar-toggler-shrink {
     }
 
     p {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
 @media (min-width: 1980px) {
+    html {
+        font-size: 21px;
+    }
+
+    .main-wrapper {
+        padding: 0.5em 3em 0 3em;
+    }
+
+    .footer-wrapper {
+        padding: 3em 3em 2em 3em;
+    }
+
+    .container-fluid {
+        padding: 2px 50px 2px 50px;
+    }
+
+    /*#region navbar */
+
+    .navbar .container, .navbar-brand, .nav-link {
+        font-size: 24px;
+    }
+
+    .nav-height-shrink {
+        min-height: 64px;
+    }
+
+    .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+        font-size: 22px !important;
+    }
+
+    /*#endregion navbar*/
+
+    p {
+        font-size: 21px;
+    }
+
 }
 
 /*#endregion Custom Rules*/

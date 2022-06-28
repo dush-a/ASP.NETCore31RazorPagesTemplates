@@ -20,22 +20,22 @@ $(document).ready(function () {
                 $("nav").addClass("nav-height-shrink");
 
 
-                $("nav .nav-company-name > a").removeClass("navbar-brand");
-                $("nav .nav-company-name > a").addClass("navbar-brand-shrink");
+                $("nav .container > a").removeClass("navbar-brand");
+                $("nav .container > a").addClass("navbar-brand-shrink");
 
-                $("nav li > a").removeClass("scroll-link");
-                $("nav li > a").addClass("scroll-link-shrink");
+                $("nav li > a").removeClass("nav-link");
+                $("nav li > a").addClass("nav-link-shrink");
 
             } else {
 
                 $("nav").addClass("nav-height");
                 $("nav").removeClass("nav-height-shrink");
 
-                $("nav .nav-company-name > a").addClass("navbar-brand");
-                $("nav .nav-company-name > a").removeClass("navbar-brand-shrink");
+                $("nav .container > a").addClass("navbar-brand");
+                $("nav .container > a").removeClass("navbar-brand-shrink");
 
-                $("nav li > a").addClass("scroll-link");
-                $("nav li > a").removeClass("scroll-link-shrink");
+                $("nav li > a").addClass("nav-link");
+                $("nav li > a").removeClass("nav-link-shrink");
 
             }
         });

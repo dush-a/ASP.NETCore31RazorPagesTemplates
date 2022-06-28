@@ -51,10 +51,10 @@
 
 </head>
 <body>
-    <header class="fixed-top" >
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-our-color border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">@optnBusiness.BusinessName</a>
+                <a class="navbar-brand flex-grow-1" asp-area="" asp-page="/Index">@optnBusiness.BusinessName</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -75,18 +75,16 @@
             </div>
         </nav>
     </header>
-    <div class="container mt-9 pt-3">
-        <main role="main" class="pb-3 mt-5">
+    <div class="header">
+        @RenderSection("Heading", required: false)
+    </div>
+    <div class="main-wrapper pt-3">
+        <main role="main" class="main-panel pb-3 mt-1">
             @RenderBody()
         </main>
         <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button" title="goto top button"><i class="fas fa-arrow-alt-circle-up"></i></a>
-    </div>
 
-    @*<footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - RP.Core31 - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>*@
+    </div>
 
     <partial name="_Footer" />
     <partial name="_MicroDataMain" />
@@ -99,11 +97,11 @@
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" 
-                integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+                integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ=="
                 crossorigin="anonymous" referrerpolicy="no-referrer"
                 asp-fallback-src="~/lib/jquery/3.4.1/jquery.min.js"
-                asp-fallback-test="window.jQuery" >
+                asp-fallback-test="window.jQuery">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js"
                 integrity="sha512-/J1T4RfwfHmP/1jDH9L/1Ax51Q21YCvMJq/ynj11hTEBwguvGJ2L72yVirJn1YQWHeZx+aIi1y5zgRueUdYn1A=="
