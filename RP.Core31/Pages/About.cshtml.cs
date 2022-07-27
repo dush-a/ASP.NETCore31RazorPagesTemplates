@@ -20,7 +20,7 @@ namespace RP.Core31.Pages
         public string ThisEnvironment { get; set; }
         public string MyApplicationName { get; set; }
         public string SolutionName { get; set; }
-        public string? TargetFramework { get; set; }
+        public string TargetFramework { get; set; }
 
         public AboutModel(IWebHostEnvironment env)
         {

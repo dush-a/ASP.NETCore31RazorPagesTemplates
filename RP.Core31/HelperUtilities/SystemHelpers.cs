@@ -27,7 +27,7 @@ namespace RP.Core31.Pages.HelperUtilities
             var atrib = Assembly.GetExecutingAssembly().CustomAttributes.FirstOrDefault(a => a.AttributeType == typeof(TargetFrameworkAttribute));
             string toBeSearched = "Version=v";
 
-            string? TargetFramework = atrib?.ConstructorArguments[0].Value?.ToString();
+            string TargetFramework = atrib?.ConstructorArguments[0].Value?.ToString();
 
             int ix = TargetFramework.IndexOf(toBeSearched);
             //int ix = myString.IndexOf(toBeSearched);
