@@ -156,10 +156,37 @@ p {
     padding-top: 5.5rem !important;
 }
 
+.border-purple {
+    border-color: #6c41ff;
+}
+
+.bg-purple {
+    background-color: #6c41ff;
+}
+
+.border-skyblue{
+    border-color:deepskyblue;
+}
+.bg-skyblue {
+    background-color: #00b0ff;
+}
+
+.border-orange {
+    border-color: #f37b04;
+}
+
+.bg-orange {
+    background-color: #f37b04;
+}
+.border-pink {
+    border-color: #f332e4;
+}
+
+.bg-pink {
+    background-color: #f332e4;
+}
 /*#endregion bootstrap extended */
-
 /*#region Navbar */
-
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
     background-color: #1b6ec2;
