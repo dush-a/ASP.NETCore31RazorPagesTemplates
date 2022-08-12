@@ -378,6 +378,10 @@ li.nav-item {
         background: transparent;
     }
 
+    #feature-set1 h1 {
+        color:#fff;
+    }
+
 /*#endregion feature-set1*/
 
 /*#region misc */

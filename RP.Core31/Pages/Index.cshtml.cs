@@ -26,7 +26,6 @@ namespace RP.Core31.Pages
         public string SolutionName { get; set; }
         public string TargetFramework { get; set; }
         public string DotNetCoreVersion;
-        //public string DotNetCoreVersion { get; set; }
         public string BusinessName { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger, IWebHostEnvironment env, IOptions<BusinessInfo> busOptions)
