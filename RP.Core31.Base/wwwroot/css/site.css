@@ -334,11 +334,12 @@ li.nav-item {
 }
 
     .service-feature1 .des-box:hover {
-        background-image: linear-gradient(to left, rgba(247, 228, 205, 0.95), rgba(250, 247, 134, 0.95));
+        background-image: linear-gradient(to left, rgba(95, 228, 238, 0.95), rgba(247, 242, 42, 0.95));
     }
 /*#endregion service-feature1*/
 
 /*#endregion Services*/
+
 /*#region business-features */
 
 .business-features .row, .service-card-grid .row {
@@ -346,7 +347,8 @@ li.nav-item {
     margin-left: 0;
 }
 
-/*#endregion */
+/*#endregion business-features*/
+
 /*#region business-scope */
 .business-scope .row {
     margin-right: 0;
@@ -510,7 +512,7 @@ li.nav-item {
         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner576x563.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        
+            margin: 0 -8px 0 -8px;
     }
 
     #feature-set1:hover {
@@ -519,7 +521,6 @@ li.nav-item {
         background-size: cover;
         background-attachment: fixed;
     }
-
         
     /*#endregion feature-set1*/
 
@@ -536,6 +537,7 @@ li.nav-item {
     .main-panel {
         padding: 0.5em 1em 0 1em;
         background-size: cover;
+
     }
 
     h1.display-4 {
@@ -616,12 +618,11 @@ li.nav-item {
     /*#region Feature-set1 */
 
     #feature-set1 {
-        background: linear-gradient( rgb(96,96,96) ),url(../img/banner768x750.jpg) no-repeat;
+        /*background: linear-gradient( rgb(96,96,96) ),url(../img/banner768x750.jpg) no-repeat;*/
         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner768x750.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        /*color: #ddd;
-        padding: 80px 0;*/
+        margin: 0 -25px 0 -25px;
     }
 
         #feature-set1:hover {
@@ -783,22 +784,21 @@ li.nav-item {
     /*#endregion business-scope*/
    
     /*#region Feature-set1 */
-    #horizontal-features {
+    #feature-set1 {
         background: linear-gradient( rgb(96,96,96) ),url(../img/banner992x750.jpg) no-repeat;
         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner992x750.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        color: #ddd;
-        padding: 80px 0;
+        margin: 0 -45px 0 -45px;
     }
 
-        #horizontal-features:hover {
-            /*fallback - background for browsers that doesn't support rgba*/
-            background: linear-gradient( rgb(96,96,96) ), url(../img/banner992x750.jpg) no-repeat;
-            background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../img/banner992x750.jpg) no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
+    #feature-set1:hover {
+        /*fallback - background for browsers that doesn't support rgba*/
+        background: linear-gradient( rgb(96,96,96) ), url(../img/banner992x750.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../img/banner992x750.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     /*#endregion Feature-set1 */
 
     /*#region custom footer */
@@ -911,6 +911,7 @@ li.nav-item {
         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner1200x750.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        margin: 0 -55px 0 -55px;
     }
 
         #feature-set1:hover {
@@ -1021,6 +1022,7 @@ li.nav-item {
         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner1980x1238.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        margin: 0 -70px 0 -70px;
     }
 
         #feature-set1:hover {
@@ -1116,6 +1118,7 @@ li.nav-item {
         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner-rest.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        margin: 0 -84px 0 -84px;
     }
 
         #feature-set1:hover {
