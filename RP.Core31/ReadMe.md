@@ -1,4 +1,4 @@
-﻿## You have created this project using the custom project template provided by InterData development team.
+﻿## You have created this project using the custom project template provided.
 
 # ToDo:
 
@@ -13,3 +13,8 @@ When you save the file, it will automatically download the required libraries in
 ## Validation Scripts
 
 Also, there is one thing you should always check if you download a different version of jquery-validation files. You must update the version number in the /Shared/ _ValidationScriptsPartial.cshtml file.
+
+
+https://user-images.githubusercontent.com/14074753/188157120-f47eac70-1f1c-45fc-93ab-cf2d74824522.mp4
+
+
