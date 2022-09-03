@@ -41,35 +41,54 @@
       "provider": "cdnjs",
       "library": "animate.css@4.1.1",
       "destination": "wwwroot/lib/animate.css/4.1.1/"
+    },
+    {
+      "library": "font-awesome@5.10.2",
+      "destination": "wwwroot/lib/font-awesome/5.10.2/",
+      "files": [
+        "css/all.min.css",
+        "css/all.css",
+        "js/all.js",
+        "js/all.min.js",
+        "webfonts/fa-brands-400.eot",
+        "webfonts/fa-brands-400.svg",
+        "webfonts/fa-brands-400.ttf",
+        "webfonts/fa-brands-400.woff",
+        "webfonts/fa-brands-400.woff2",
+        "webfonts/fa-regular-400.eot",
+        "webfonts/fa-regular-400.svg",
+        "webfonts/fa-regular-400.ttf",
+        "webfonts/fa-regular-400.woff",
+        "webfonts/fa-regular-400.woff2",
+        "webfonts/fa-solid-900.eot",
+        "webfonts/fa-solid-900.svg",
+        "webfonts/fa-solid-900.ttf",
+        "webfonts/fa-solid-900.woff",
+        "webfonts/fa-solid-900.woff2",
+        "sprites/brands.svg",
+        "sprites/regular.svg",
+        "sprites/solid.svg"
+      ]
     }
-  ,
-{
-  "library": "font-awesome@5.10.2",
-  "destination": "wwwroot/lib/font-awesome/5.10.2/",
-  "files": [
-    "css/all.min.css",
-    "css/all.css",
-    "js/all.js",
-    "js/all.min.js",
-    "webfonts/fa-brands-400.eot",
-    "webfonts/fa-brands-400.svg",
-    "webfonts/fa-brands-400.ttf",
-    "webfonts/fa-brands-400.woff",
-    "webfonts/fa-brands-400.woff2",
-    "webfonts/fa-regular-400.eot",
-    "webfonts/fa-regular-400.svg",
-    "webfonts/fa-regular-400.ttf",
-    "webfonts/fa-regular-400.woff",
-    "webfonts/fa-regular-400.woff2",
-    "webfonts/fa-solid-900.eot",
-    "webfonts/fa-solid-900.svg",
-    "webfonts/fa-solid-900.ttf",
-    "webfonts/fa-solid-900.woff",
-    "webfonts/fa-solid-900.woff2",
-    "sprites/brands.svg",
-    "sprites/regular.svg",
-    "sprites/solid.svg"
+    ,
+    {
+      "library": "jquery-validate@1.19.5",
+      "destination": "wwwroot/lib/jquery-validation/1.19.5/",
+      "files": [
+        "jquery.validate.min.js",
+        "additional-methods.js",
+        "additional-methods.min.js",
+        "jquery.validate.js"
+      ]
+    }
+    ,
+    {
+      "library": "jquery-validation-unobtrusive@4.0.0",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/4.0.0/",
+      "files": [
+        "jquery.validate.unobtrusive.min.js",
+        "jquery.validate.unobtrusive.js"
+      ]
+    }
   ]
-}
-]
 }
