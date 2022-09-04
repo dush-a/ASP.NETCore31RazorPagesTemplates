@@ -1,0 +1,68 @@
+﻿@import 'TWBSColorMenu.scss';
+
+$caret-right: -90deg;
+$caret-left: 90deg;
+
+$navbar-height: 110px;
+
+@mixin item-display {
+    /*color: #000;*/
+    background: transparent;
+    outline: 0;
+}
+ 
+.navbar {
+    min-height: $navbar-height;
+    margin-bottom: 0px !important;
+
+}
+
+.home-top-nav a, .navbar > li > a {
+    text-transform: capitalize;
+    padding: 10px 15px;
+}
+
+.adjust-right-ddl {
+    margin-right: 0.75rem !important;
+}
+
+/*.dropdown-menu {
+    padding: 0px 0;
+    margin: 0 0 0;
+    border: 1px solid transition !important;
+    border: 1px solid #fff;*/
+    /*border-radius: 0px;*/
+    /*-webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}*/
+
+@media only screen and (min-width: 576px) {
+
+    @mixin dropto($caret1, $caret2) {
+        > li {
+            > a:hover:after {
+                text-decoration: underline;
+                transform: rotate($caret1); //eg. -90deg
+            }
+        }
+
+        ul {
+            > li {
+                > a:hover:after {
+                    text-decoration: underline;
+                    transform: rotate($caret2); //eg. 90deg
+                }
+            }
+        }
+    }
+
+    .dropdown-menu {
+        @include dropto($caret-right, $caret-left);
+    }
+
+    .rightmost-dropdown {
+        .dropdown-menu {
+            @include dropto($caret-left, $caret-right);
+        }
+    }
+}
