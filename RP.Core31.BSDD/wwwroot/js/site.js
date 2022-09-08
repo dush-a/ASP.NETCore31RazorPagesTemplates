@@ -22,7 +22,7 @@ $(document).ready(function () {
 
                 $("nav .container > a").removeClass("navbar-brand");
                 $("nav .container > a").addClass("navbar-brand-shrink");
-
+                $("nav a.logo").addClass("logo-link-shrink");
                 $("nav li > a").removeClass("nav-link");
                 $("nav li > a").addClass("nav-link-shrink");
 
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
                 $("nav .container > a").addClass("navbar-brand");
                 $("nav .container > a").removeClass("navbar-brand-shrink");
-
+                $("nav a.logo").removeClass("logo-link-shrink");
                 $("nav li > a").addClass("nav-link");
                 $("nav li > a").removeClass("nav-link-shrink");
 

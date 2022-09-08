@@ -1,42 +1,30 @@
-﻿@import 'TWBSColorMenu.scss';
+﻿@import 'NavbarHover.scss';
 
+$bgDropDownLevel1: #0a7503;
+$bgDropDownLevel2: #05873f;
+$bgDropDownLevel3: #07a198;
 $caret-right: -90deg;
 $caret-left: 90deg;
 
-$navbar-height: 110px;
 
-@mixin item-display {
-    /*color: #000;*/
+/*@mixin item-display {
     background: transparent;
     outline: 0;
 }
- 
-.navbar {
-    min-height: $navbar-height;
-    margin-bottom: 0px !important;
-
+*/
+.home-top-nav .collapse ul ul, .home-top-nav .collapse ul ul.dropdown-menu {
+    background: $bgDropDownLevel1;
 }
 
-.home-top-nav a, .navbar > li > a {
-    text-transform: capitalize;
-    padding: 10px 15px;
+.home-top-nav .collapse ul ul ul, .home-top-nav .collapse ul ul ul.dropdown-menu {
+    background: $bgDropDownLevel2;
 }
 
-.adjust-right-ddl {
-    margin-right: 0.75rem !important;
+.home-top-nav .collapse ul ul ul ul, .home-top-nav .collapse ul ul ul ul.dropdown-menu {
+    background: $bgDropDownLevel3;
 }
 
-/*.dropdown-menu {
-    padding: 0px 0;
-    margin: 0 0 0;
-    border: 1px solid transition !important;
-    border: 1px solid #fff;*/
-    /*border-radius: 0px;*/
-    /*-webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}*/
-
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
 
     @mixin dropto($caret1, $caret2) {
         > li {

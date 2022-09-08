@@ -2,5 +2,9 @@
   {
     "outputFile": "wwwroot/themes/HoverDD/site.css",
     "inputFile": "wwwroot/themes/HoverDD/site.scss"
+  },
+  {
+    "outputFile": "wwwroot/themes/HoverDD/scss/DesignTestGuide.css",
+    "inputFile": "wwwroot/themes/HoverDD/scss/DesignTestGuide.scss"
   }
 ]

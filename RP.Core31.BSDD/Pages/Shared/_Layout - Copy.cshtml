@@ -25,13 +25,12 @@
     </title>
     @RenderSection("MetaTags", required: false)
 
-<environment include="Development">
-    <link rel="stylesheet" href="~/lib/animate.css/4.1.1/animate.css" />
-    <link rel="stylesheet" href="~/lib/font-awesome/5.10.2/css/all.css" />
-    <link rel="stylesheet" href="~/lib/bootstrap/4.5.3/css/bootstrap.css" />
-    <link rel="stylesheet" href="~/themes/HoverDD/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/themes/HoverDD/scss/DesignTestGuide.min.css" type="text/css"  />
-</environment>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/animate.css/4.1.1/animate.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/5.10.2/css/all.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/4.5.3/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/themes/HoverDD/site.css" asp-append-version="true" />
+    </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
               asp-fallback-href="~/lib/animate.css/4.1.1/animate.min.css"
@@ -55,11 +54,7 @@
     <header class="fixed-top">
         <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-dark bg-our-color border-bottom box-shadow mb-3">
             <div class="container-fluid home-top-nav">
-                <div id="logo" class="logo">
-                    <a class="navbar-brand flex-grow-1" asp-area="" asp-page="/Index">@optnBusiness.BusinessName</a>
-                    <environment include="Development"><div class="guide-item"><span class="viewport-width">px</span> &nbsp;X&nbsp;<span class="viewport-height">px</span></div></environment>
-                </div>
-                
+                <a class="navbar-brand flex-grow-1" asp-area="" asp-page="/Index">@optnBusiness.BusinessName</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -67,7 +62,7 @@
                 @*<div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">*@
                 <div class="navbar-collapse collapse d-md-inline-flex">
 
-                    <ul class="navbar-nav left-menu flex-grow-1">
+                    <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item @Html.ActiveClass("/Index")">
                             <a class="nav-link text-light " asp-area="" asp-page="/Index">Home</a>
                         </li>
@@ -95,11 +90,9 @@
             </div>
         </nav>
     </header>
-
     <div class="header">
         @RenderSection("Heading", required: false)
     </div>
-    <environment include="Development"> <partial name="_DesignTestGuide" /></environment>
     <div class="main-wrapper pt-3">
         <main role="main" class="main-panel pb-3 mt-1">
             @RenderBody()
@@ -110,10 +103,6 @@
 
     <partial name="_Footer" />
     <partial name="_MicroDataMain" />
-
-    <div class="sticky-footer">
-        <environment include="Development"><div class="dev-col"><span class="show-menu-break-point-text"></span></div></environment>
-    </div>
 
     <environment include="Development">
         <script src="~/lib/jquery/3.4.1/jquery.js"></script>
