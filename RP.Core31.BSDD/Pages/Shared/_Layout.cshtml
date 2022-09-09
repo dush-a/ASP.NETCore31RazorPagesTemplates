@@ -29,8 +29,8 @@
     <link rel="stylesheet" href="~/lib/animate.css/4.1.1/animate.css" />
     <link rel="stylesheet" href="~/lib/font-awesome/5.10.2/css/all.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/4.5.3/css/bootstrap.css" />
-    <link rel="stylesheet" href="~/themes/HoverDD/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/themes/HoverDD/scss/DesignTestGuide.min.css" type="text/css"  />
+    <link rel="stylesheet" href="~/themes/HoverDD/StyleSheet.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/themes/HoverDD/dev/DesignTestGuide.min.css" type="text/css"  />
 </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -45,7 +45,7 @@
               integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
               crossorigin="anonymous" referrerpolicy="no-referrer"
               asp-fallback-href="~/lib/bootstrap/4.5.3/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="~/themes/HoverDD/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/themes/HoverDD/StyleSheet.min.css" asp-append-version="true" />
     </environment>
 
     @RenderSection("StyleSheets", required: false)
@@ -56,7 +56,8 @@
         <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-dark bg-our-color border-bottom box-shadow mb-3">
             <div class="container-fluid home-top-nav">
                 <div id="logo" class="logo">
-                    <a class="navbar-brand flex-grow-1" asp-area="" asp-page="/Index">@optnBusiness.BusinessName</a>
+                    <span class="brand-logo"><img class="img-fluid" src="~/themes/HoverDD/img/logo.png" /><a class="navbar-brand flex-grow-1" asp-area="" asp-page="/Index"> @optnBusiness.BusinessName</a></span>
+                    @*<a class="navbar-brand flex-grow-1" asp-area="" asp-page="/Index"><img class="img-fluid" src="~/themes/HoverDD/img/logo.png" /> @optnBusiness.BusinessName</a>*@
                     <environment include="Development"><div class="guide-item"><span class="viewport-width">px</span> &nbsp;X&nbsp;<span class="viewport-height">px</span></div></environment>
                 </div>
                 
@@ -79,11 +80,11 @@
                         <li class="nav-item dropdown @Html.ActiveClass("/")">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdownMenuAboutLink" aria-haspopup="true" aria-expanded="false">  About  </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuAboutLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li class="dropdown-item @Html.ActiveClass("/About")">
+                                <li><a class="nav-link"  href="#">Action</a></li>
+                                <li class=" @Html.ActiveClass("/About")">
                                     <a class="nav-link text-light " asp-area="" asp-page="/About">About</a>
                                 </li>
-                                <li class="dropdown-item @Html.ActiveClass("/Privacy")">
+                                <li class=" @Html.ActiveClass("/Privacy")">
                                     <a class="nav-link text-light " asp-area="" asp-page="/Privacy">Privacy</a>
                                 </li>
                             </ul>

@@ -12,6 +12,15 @@
 @section StyleSheets
 {
     @*<link rel="stylesheet" href="~/css/pricing.css" />*@
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/themes/HoverDD/site.css" asp-append-version="true" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/themes/HoverDD/site.min.css" asp-append-version="true" />
+    </environment>
+
+
 }
 
 @section scripts{

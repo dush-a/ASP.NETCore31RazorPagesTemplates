@@ -1,0 +1,74 @@
+﻿/* The site used following breakpoints as defaults. */
+/*
+
+@media (min-width: $bp320-xx-small){} //20*16px = 320px 
+@media (min-width: $bp480-x-small) {}
+@media (min-width: $bp576-small){}
+@media (min-width: $bp768-medium){}
+@media (min-width: $bp992-large){}
+@media (min-width: $bp1200-x-large) {}
+@media (min-width: $bp1400-xx-large){}
+@media (min-width: $bp1680-xxx-large){}
+@media (min-width: $bp1920-hd){}
+@media (min-width: $bp2560-ultrasharp){}
+@media (min-width: $bp3840-uhd-4k){}
+@media (min-width: $bp7680-uhd-8k){}
+
+    */
+/*@import 'scssFunctions.scss';*/
+/* Use this template to add new scss file for the project */
+/*#region Defaults and below $bp320-xx-small */
+.carousel-caption p {
+  display: block; }
+
+.carousel .carousel-item {
+  height: 610px; }
+
+/*.carousel-item a {
+    color: #fce10b;
+}*/
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  min-height: 690px; }
+
+.carousel h1.display-4 {
+  padding-top: 15px; }
+
+/*#endregion */
+@media (min-width: 20em) {
+  /* 20*16px = 320px */ }
+
+@media (min-width: 30em) {
+  /* 30*16px = 480px */ }
+
+@media (min-width: 36em) {
+  /* 36*16px = 576px */ }
+
+@media (min-width: 48em) {
+  /*  48*16px = 768px */ }
+
+@media (min-width: 62em) {
+  /* 62*16px = 992px */ }
+
+@media (min-width: 75em) {
+  /* 75*16px = 1200px */ }
+
+@media (min-width: 87.5em) {
+  /* 87.5*16px = 1400px */ }
+
+@media (min-width: 105em) {
+  /* 105*16px = 1680px */ }
+
+@media (min-width: 120em) {
+  /* 120*16px = 1920px */ }
+
+@media (min-width: 160em) {
+  /* 160*16px = 2560px */ }
+
+@media (min-width: 240em) {
+  /* 240*16px = 3840px */ }
+
+@media (min-width: 480em) {
+  /* 480*16px = 7680px */ }

@@ -1,0 +1,60 @@
+﻿@import '../DefaultBreakPoints.scss';
+@import 'scssFunctions.scss';
+
+/* Use this template to add new scss file for the project */
+
+/*#region Defaults and below $bp320-xx-small */
+
+
+
+/*#endregion */
+
+@media (min-width: $bp320-xx-small) {
+    /* 20*16px = 320px */
+}
+
+@media (min-width: $bp480-x-small) {
+    /* 30*16px = 480px */
+}
+
+@media (min-width: $bp576-small) {
+    /* 36*16px = 576px */
+}
+
+@media (min-width: $bp768-medium) {
+    /*  48*16px = 768px */
+}
+
+@media (min-width: $bp992-large) {
+    /* 62*16px = 992px */
+}
+
+@media (min-width: $bp1200-x-large) {
+    /* 75*16px = 1200px */
+}
+
+@media (min-width: $bp1400-xx-large) {
+    /* 87.5*16px = 1400px */
+}
+
+@media (min-width: $bp1680-xxx-large) {
+    /* 105*16px = 1680px */
+}
+
+@media (min-width: $bp1920-hd) {
+    /* 120*16px = 1920px */
+}
+
+@media (min-width: $bp2560-ultrasharp) {
+    /* 160*16px = 2560px */
+}
+
+@media (min-width: $bp3840-uhd-4k) {
+    /* 240*16px = 3840px */
+
+}
+
+@media (min-width: $bp7680-uhd-8k) {
+    /* 480*16px = 7680px */
+
+}

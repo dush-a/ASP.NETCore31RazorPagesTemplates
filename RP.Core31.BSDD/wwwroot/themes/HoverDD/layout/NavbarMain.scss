@@ -1,0 +1,257 @@
+﻿@import 'NavbarDefaults.scss';
+@import '../DefaultBreakPoints.scss';
+
+$navHight: 80px;
+$navHightShrinkMin: 50px;
+$navMainFontSize: 16px;
+$navMainShrinkFontSize: 15px;
+
+@mixin mixin-AdjustTopMenuDropDown($DropDownMinWidth, $DropDownMaxWidth) {
+
+    .home-top-nav .collapse ul ul {
+        min-width: $DropDownMinWidth;
+        max-width: $DropDownMaxWidth;
+
+        ul {
+            min-width: $DropDownMinWidth;
+            max-width: $DropDownMaxWidth;
+
+            a {
+                white-space: normal;
+            }
+
+            ul {
+                min-width: $DropDownMinWidth;
+                max-width: $DropDownMaxWidth;
+
+                a {
+                    white-space: normal;
+                }
+            }
+        }
+    }
+    /*#region right-most Dropdown */
+    .home-top-nav .collapse ul.right-menu .rightmost-dropdown ul {
+        ul {
+            left: -100%;
+            min-width: $DropDownMinWidth;
+            max-width: $DropDownMaxWidth;
+
+            ul {
+                left: 100%;
+
+                ul {
+                    left: -100%;
+                }
+            }
+        }
+    }
+    /*#endregion Right-most Dropdown*/
+}
+
+@mixin mixin-AdjustTopMenu($navHight, $navHightShrinkMin, $navMainFontSize, $navMainShrinkFontSize, $navMainShrinkFontWeight) {
+    /* Usage: @include mixin-AdjustTopMenu(80px, 50px, 16px, 15px, 300);*/
+       
+    .nav-height {
+        min-height: $navHight;
+    }
+
+    .nav-height-shrink {
+        min-height: $navHightShrinkMin;
+    }
+
+    .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
+        font-size: $navMainFontSize;
+    }
+
+    .navbar-brand, .nav-link {
+        font-size: $navMainFontSize;
+    }
+
+    .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+        font-size: $navMainShrinkFontSize !important;
+        font-weight: $navMainShrinkFontWeight;
+    }
+}
+
+/*#region Navbar < 576px  */
+
+.nav-height {
+    min-height: $navHight;
+    padding-top: 15px;
+    margin-bottom: 0px !important;
+}
+
+.nav-height-shrink {
+    min-height: $navHightShrinkMin;
+    padding: -15px;
+    transition: all 0.5s ease;
+}
+
+.home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
+    padding: 6px 5px;
+    text-transform: capitalize;
+    font-size: $navMainFontSize;
+}
+
+.navbar-brand, .nav-link {
+    font-size: $navMainFontSize;
+}
+
+.navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+    font-size: $navMainShrinkFontSize !important;
+    color: #ecf0f1;
+    font-weight: 200;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 0.25em;
+}
+
+.nav .navbar-toggler-shrink {
+    margin-right: 1.5rem;
+    padding: 0.2rem;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+li.nav-item {
+    padding-bottom: 5px;
+}
+
+.adjust-right-ddl {
+    margin-right: 1.75rem !important;
+}
+
+.logo {
+
+/*    img {
+        margin-top: -35px;
+        margin-bottom: -35px;
+    }*/
+}
+
+.brand-logo {
+    display: inline-flex;
+ /*   justify-content: center;
+    align-items: center;*/
+}
+
+/*#endregion Navbar < 576px */
+
+
+@media (min-width: 576px) {
+
+    @include mixin-AdjustTopMenu(110px, 55px, 18px, 17px, 200);
+
+}
+
+@media only screen and (max-width: 767px) {
+    $DropDown-MinWidth: 250px;
+
+    .navbar-nav .show .dropdown-menu .dropdown-menu > li > a {
+        padding: 4px 6px 4px 6px
+    }
+
+    .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu > li > a {
+        padding: 4px 6px 4px 6px
+    }
+
+    .home-top-nav .collapse ul ul {
+        min-width: $DropDown-MinWidth;
+    }
+}
+
+@media (min-width: 768px) {
+
+    @include mixin-AdjustTopMenu(110px, 55px, 20px, 18px, 300);
+    @include mixin-AdjustTopMenuDropDown(250px, 250px);
+
+    .home-top-nav ul.dropdown-menu {
+        border-radius: 0.25em;
+    }
+
+    .adjust-right-ddl {
+        margin-right: 2.15rem !important;
+    }
+    .home-top-nav a.navbar-brand {
+        display: none !important;
+    }
+
+    .logo {
+        /*    img {
+        margin-top: -35px;
+        margin-bottom: -35px;
+    }*/
+    }
+
+    .brand-logo {
+        display: inline-flex;
+        /*   justify-content: center;
+    align-items: center;*/
+    }
+}
+
+@media (min-width: 992px) {
+
+    @include mixin-AdjustTopMenu(110px, 55px, 22px, 20px, 300);
+    @include mixin-AdjustTopMenuDropDown(280px, 280px);
+
+    .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
+        padding: 7px 8px;
+    }
+    .home-top-nav a.navbar-brand {
+        display:inline !important;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    @include mixin-AdjustTopMenu(110px, 55px, 23px, 21px, 300);
+    @include mixin-AdjustTopMenuDropDown(290px, 290px);
+    .adjust-right-ddl {
+        margin-right: 2.5rem !important;
+    }
+}
+
+@media (min-width: $bp1400-xx-large) {
+    /* 87.5*16px = 1400px */
+    @include mixin-AdjustTopMenu(110px, 55px, 24px, 21px, 300);
+    @include mixin-AdjustTopMenuDropDown(310px, 310px);
+}
+
+@media (min-width: $bp1680-xxx-large) {
+    /* 105*16px = 1680px */
+    @include mixin-AdjustTopMenu(110px, 55px, 25px, 22px, 300);
+    @include mixin-AdjustTopMenuDropDown(230px, 230px);
+}
+
+@media (min-width: $bp1920-hd) {
+    /* 120*16px = 1920px */
+    @include mixin-AdjustTopMenu(110px, 55px, 26px, 22px, 300);
+    @include mixin-AdjustTopMenuDropDown(240px, 240px);
+}
+
+@media (min-width: $bp2560-ultrasharp) {
+    /* 160*16px = 2560px */
+    @include mixin-AdjustTopMenu(112px, 55px, 27px, 23px, 300);
+    @include mixin-AdjustTopMenuDropDown(340px, 340px);
+}
+
+@media (min-width: $bp3840-uhd-4k) {
+    /* 240*16px = 3840px */
+    @include mixin-AdjustTopMenu(114px, 55px, 28px, 23px, 400);
+    @include mixin-AdjustTopMenuDropDown(375px, 375px);
+}
+
+@media (min-width: $bp7680-uhd-8k) {
+    /* 480*16px = 7680px */
+    @include mixin-AdjustTopMenu(116px, 60px, 30px, 24px, 400);
+    @include mixin-AdjustTopMenuDropDown(400px, 400px);
+}
+
+
+

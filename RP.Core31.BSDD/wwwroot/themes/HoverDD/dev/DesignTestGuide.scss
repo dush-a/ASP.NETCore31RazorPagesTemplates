@@ -1,5 +1,5 @@
-﻿@import 'DefaultBreakPoints.scss';
-@import 'scssFunctions.scss';
+﻿@import '../DefaultBreakPoints.scss';
+@import '../scssFunctions.scss';
 
 $breakpt: $bp320-xx-small*16;
 $breakpt_display_font_size: 0.727374em;//0.8rem;
