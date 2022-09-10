@@ -34,6 +34,18 @@
   /* Fallback to support old outlook websites */
   font-size: 0.5rem; }
 
+.sticky-header {
+  position: fixed;
+  top: 0px;
+  left: 8px;
+  z-index: 1031; }
+  .sticky-header .guide-item {
+    padding: 0.1rem 0.5rem;
+    background: #000000;
+    color: white; }
+    .sticky-header .guide-item .viewport-width, .sticky-header .guide-item .viewport-height {
+      color: white; }
+
 .sticky-footer {
   position: fixed;
   bottom: 0px;
@@ -69,7 +81,7 @@
   /* 36*16px = 576px */
   .design-test-guide, .new-design-test-guide, .dtg {
     grid-template-columns: repeat(2, 1fr);
-    font-size: 0.6rem; }
+    font-size: 0.8rem; }
   .new-design-test-guide {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
     .new-design-test-guide > div:first-child {
@@ -80,12 +92,12 @@
       grid-column: span 3; }
   .break-point::after {
     content: "BP = 576px(36em)";
-    font-size: 0.6rem; }
+    font-size: 0.8rem; }
   .show-menu-break-point-text::after {
     content: "BP = 576px(36em)";
     font-size: 8px;
     /* Fallback to support old outlook websites */
-    font-size: 0.6rem; } }
+    font-size: 0.8rem; } }
 
 @media (min-width: 48em) {
   /*  48*16px = 768px */
@@ -114,7 +126,7 @@
 @media (min-width: 75em) {
   /* 75*16px = 1200px */
   .new-design-test-guide, .design-test-guide, .dtg {
-    font-size: 0.8rem; }
+    font-size: 0.9rem; }
   .new-design-test-guide > div:first-child {
     grid-column: span 4; }
   /*    .dtg {
@@ -128,7 +140,7 @@
     }*/
   .break-point::after, .show-menu-break-point-text::after {
     content: "BP = 1200px(75em)";
-    font-size: 0.8rem; } }
+    font-size: 0.9rem; } }
 
 @media (min-width: 87.5em) {
   /* 87.5*16px = 1400px */

@@ -1,7 +1,7 @@
 ﻿/* The site used following breakpoints as defaults. */
 /*#region Site Defaults */
 html {
-  font-size: 16px; }
+  font-size: 14px; }
 
 body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", -apple-system, BlinkMacSystemFont; }
@@ -151,10 +151,18 @@ p {
 
 /*#endregion microdata*/
 @media (min-width: 20em) {
-  /* 20*16px = 320px */ }
+  /* 20*16px = 320px */
+  /*#region Site Defaults */
+  html {
+    font-size: 15px; }
+  /*#endregion Site Defaults */ }
 
 @media (min-width: 30em) {
-  /* 30*16px = 480px */ }
+  /* 30*16px = 480px */
+  /*#region Site Defaults */
+  html {
+    font-size: 16px; }
+  /*#endregion Site Defaults */ }
 
 @media (min-width: 36em) {
   /* 36*16px = 576px */
@@ -285,11 +293,11 @@ p {
   /* 480*16px = 7680px */ }
 
 /* The site used following breakpoints as defaults. */
-/* Use this template to add new scss file for the project */
 /*#region Defaults and below $bp320-xx-small */
 .footer-wrapper {
   padding: 3em 0.5em 2em 0.5em;
-  background-color: #31002d;
+  background-color: #042801;
+  /* #31002d;*/
   /*clip-path: polygon(0 115px, 100% 0, 100% 100%, 0% 100%); 
     */ }
 
@@ -646,7 +654,6 @@ p {
 
 .nav-height-shrink {
   min-height: 50px;
-  padding: -15px;
   transition: all 0.5s ease; }
 
 .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
@@ -669,6 +676,31 @@ p {
   margin-right: 1.5rem;
   padding: 0.2rem; }
 
+.navbar-toggler-icon-shrink {
+  color: #b2edfb; }
+
+.threebar-icon-shrink {
+  border-color: #25b004;
+  /* padding: 0.0925rem 0.0975rem;*/
+  font-size: 15px;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  /* justify-content: start;
+    align-items: self-start;*/
+  margin-top: -40px; }
+
+/*
+.threebar-icon-shrink{
+    width:1em;
+    height:1em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 80% 80%;
+}
+*/
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -680,12 +712,24 @@ li.nav-item {
 .adjust-right-ddl {
   margin-right: 1.75rem !important; }
 
-.logo {
-  /*    img {
-        margin-top: -35px;
-        margin-bottom: -35px;
-    }*/ }
+.brand-logo-shrink {
+  font-size: 15px !important;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center; }
 
+/*.logo {
+
+    a.brand-logo-shrink {
+        font-size: $navMainShrinkFontSize !important;*/
+/*font-weight: 100;*/
+/*white-space: normal;*/
+/*text-align: center;*/
+/*word-break: break-all;
+        justify-content: center;
+        align-items: center;
+    }
+}*/
 .brand-logo {
   display: inline-flex;
   /*   justify-content: center;
@@ -697,12 +741,13 @@ li.nav-item {
   .nav-height {
     min-height: 110px; }
   .nav-height-shrink {
-    min-height: 55px; }
+    /*min-height: $navHightShrinkMin;*/
+    max-height: 55px; }
   .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
     font-size: 18px; }
   .navbar-brand, .nav-link {
     font-size: 18px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink, .brand-logo-shrink {
     font-size: 17px !important;
     font-weight: 200; } }
 
@@ -719,12 +764,13 @@ li.nav-item {
   .nav-height {
     min-height: 110px; }
   .nav-height-shrink {
-    min-height: 55px; }
+    /*min-height: $navHightShrinkMin;*/
+    max-height: 55px; }
   .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
     font-size: 20px; }
   .navbar-brand, .nav-link {
     font-size: 20px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink, .brand-logo-shrink {
     font-size: 18px !important;
     font-weight: 300; }
   .home-top-nav .collapse ul ul {
@@ -754,13 +800,8 @@ li.nav-item {
     border-radius: 0.25em; }
   .adjust-right-ddl {
     margin-right: 2.15rem !important; }
-  .home-top-nav a.navbar-brand {
+  .home-top-nav a.navbar-brand, a.brand-logo-shrink {
     display: none !important; }
-  .logo {
-    /*    img {
-        margin-top: -35px;
-        margin-bottom: -35px;
-    }*/ }
   .brand-logo {
     display: inline-flex;
     /*   justify-content: center;
@@ -771,12 +812,13 @@ li.nav-item {
   .nav-height {
     min-height: 110px; }
   .nav-height-shrink {
-    min-height: 55px; }
+    /*min-height: $navHightShrinkMin;*/
+    max-height: 55px; }
   .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
     font-size: 22px; }
   .navbar-brand, .nav-link {
     font-size: 22px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink, .brand-logo-shrink {
     font-size: 20px !important;
     font-weight: 300; }
   .home-top-nav .collapse ul ul {
@@ -805,19 +847,27 @@ li.nav-item {
   .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
     padding: 7px 8px; }
   .home-top-nav a.navbar-brand {
-    display: inline !important; } }
+    /* display: inline !important;*/
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center; }
+  .home-top-nav a.brand-logo-shrink {
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center; } }
 
 @media (min-width: 1200px) {
   /* Usage: @include mixin-AdjustTopMenu(80px, 50px, 16px, 15px, 300);*/
   .nav-height {
     min-height: 110px; }
   .nav-height-shrink {
-    min-height: 55px; }
+    /*min-height: $navHightShrinkMin;*/
+    max-height: 55px; }
   .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
     font-size: 23px; }
   .navbar-brand, .nav-link {
     font-size: 23px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink, .brand-logo-shrink {
     font-size: 21px !important;
     font-weight: 300; }
   .home-top-nav .collapse ul ul {
@@ -852,12 +902,13 @@ li.nav-item {
   .nav-height {
     min-height: 110px; }
   .nav-height-shrink {
-    min-height: 55px; }
+    /*min-height: $navHightShrinkMin;*/
+    max-height: 55px; }
   .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
     font-size: 24px; }
   .navbar-brand, .nav-link {
     font-size: 24px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink, .brand-logo-shrink {
     font-size: 21px !important;
     font-weight: 300; }
   .home-top-nav .collapse ul ul {
@@ -890,12 +941,13 @@ li.nav-item {
   .nav-height {
     min-height: 110px; }
   .nav-height-shrink {
-    min-height: 55px; }
+    /*min-height: $navHightShrinkMin;*/
+    max-height: 55px; }
   .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
     font-size: 25px; }
   .navbar-brand, .nav-link {
     font-size: 25px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink, .brand-logo-shrink {
     font-size: 22px !important;
     font-weight: 300; }
   .home-top-nav .collapse ul ul {
@@ -928,12 +980,13 @@ li.nav-item {
   .nav-height {
     min-height: 110px; }
   .nav-height-shrink {
-    min-height: 55px; }
+    /*min-height: $navHightShrinkMin;*/
+    max-height: 55px; }
   .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
     font-size: 26px; }
   .navbar-brand, .nav-link {
     font-size: 26px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink, .brand-logo-shrink {
     font-size: 22px !important;
     font-weight: 300; }
   .home-top-nav .collapse ul ul {
@@ -966,12 +1019,13 @@ li.nav-item {
   .nav-height {
     min-height: 112px; }
   .nav-height-shrink {
-    min-height: 55px; }
+    /*min-height: $navHightShrinkMin;*/
+    max-height: 55px; }
   .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
     font-size: 27px; }
   .navbar-brand, .nav-link {
     font-size: 27px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink, .brand-logo-shrink {
     font-size: 23px !important;
     font-weight: 300; }
   .home-top-nav .collapse ul ul {
@@ -1004,12 +1058,13 @@ li.nav-item {
   .nav-height {
     min-height: 114px; }
   .nav-height-shrink {
-    min-height: 55px; }
+    /*min-height: $navHightShrinkMin;*/
+    max-height: 55px; }
   .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
     font-size: 28px; }
   .navbar-brand, .nav-link {
     font-size: 28px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink, .brand-logo-shrink {
     font-size: 23px !important;
     font-weight: 400; }
   .home-top-nav .collapse ul ul {
@@ -1042,12 +1097,13 @@ li.nav-item {
   .nav-height {
     min-height: 116px; }
   .nav-height-shrink {
-    min-height: 60px; }
+    /*min-height: $navHightShrinkMin;*/
+    max-height: 60px; }
   .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
     font-size: 30px; }
   .navbar-brand, .nav-link {
     font-size: 30px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink, .brand-logo-shrink {
     font-size: 24px !important;
     font-weight: 400; }
   .home-top-nav .collapse ul ul {
@@ -1074,9 +1130,51 @@ li.nav-item {
         left: -100%; }
   /*#endregion Right-most Dropdown*/ }
 
+/*#region Defaults and below $bp320-xx-small */
 /*#region misc */
 .section-divider {
   padding-top: 2em;
   padding-bottom: 2em; }
 
 /*#endregion misc*/
+/*#endregion */
+@media (min-width: 20em) {
+  /* 20*16px = 320px */ }
+
+@media (min-width: 30em) {
+  /* 30*16px = 480px */ }
+
+@media (min-width: 36em) {
+  /* 36*16px = 576px */ }
+
+@media (min-width: 48em) {
+  /*  48*16px = 768px */ }
+
+@media (min-width: 62em) {
+  /* 62*16px = 992px */ }
+
+@media (min-width: 75em) {
+  /* 75*16px = 1200px */
+  /*#region misc */
+  .section-divider {
+    padding-top: 2em;
+    padding-bottom: 2em; }
+  /*#endregion misc*/ }
+
+@media (min-width: 87.5em) {
+  /* 87.5*16px = 1400px */ }
+
+@media (min-width: 105em) {
+  /* 105*16px = 1680px */ }
+
+@media (min-width: 120em) {
+  /* 120*16px = 1920px */ }
+
+@media (min-width: 160em) {
+  /* 160*16px = 2560px */ }
+
+@media (min-width: 240em) {
+  /* 240*16px = 3840px */ }
+
+@media (min-width: 480em) {
+  /* 480*16px = 7680px */ }

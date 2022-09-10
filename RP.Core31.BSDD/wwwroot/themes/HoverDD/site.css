@@ -207,100 +207,112 @@ p {
 /*#endregion header Carousel*/
 /*#region Services */
 /*#region business-services1-grid1 */
-#sctn-business-services1 {
-  padding-top: 1em; }
+/*#section-business-services1 {
+    padding-top: 1em;
+}
 
-#sctn-business-services1 .row {
-  padding-top: 1em;
-  padding-bottom: 5em;
-  margin-right: -8px;
-  margin-left: -8px; }
+#section-business-services1 .row {
+    padding-top: 1em;
+    padding-bottom: 5em;
+    margin-right: -8px;
+    margin-left: -8px;
+}
 
 .business-services1-grid1 {
-  padding: 0.1em 0 0.1em 0; }
+    padding: 0.1em 0 0.1em 0;
+}
 
 .motion-picture1 {
-  text-align: center;
-  padding-top: 5em;
-  animation: fadeInTopRight 2s ease; }
-
+    text-align: center;
+    padding-top: 5em;
+    animation: fadeInTopRight 2s ease;
+}*/
 /*#endregion business-services1-grid1*/
-/*#region service2 */
-/*#endregion service2*/
-/*#region service-feature1 */
-.service-feature1 {
-  background-color: #fafafa; }
+/*#region service-feature-grid */
+/*.service-feature-grid {
+    background-color: #fafafa;
+}
 
-.service-feature1 .col-adjust {
-  margin-bottom: 2em; }
+.service-feature-grid .col-adjust {
+    margin-bottom: 2em;
+}
 
 .feature1-header {
-  padding: 2em; }
+    padding: 2em;
+}
 
-.service-feature1 .des-box a {
-  color: black; }
+.service-feature-grid .des-box a {
+    color: black;
+}
 
-.service-feature1 .feature-img {
-  color: #e13837; }
+.service-feature-grid .feature-img {
+    color: #e13837;
+}
 
-.service-feature1 .des-box {
-  transition: 0.3s ease-in;
-  border: 1px solid #fafafa;
-  border-radius: 6px;
-  padding: 2rem 1rem 2rem 1rem;
-  background: #fff;
-  box-shadow: 1px 5px 7.5px #C4C4C433;
-  display: flex;
-  text-align: center; }
+.service-feature-grid .des-box {
+    transition: 0.3s ease-in;
+    border: 1px solid #fafafa;
+    border-radius: 6px;
+    padding: 2rem 1rem 2rem 1rem;
+    background: #fff;
+    box-shadow: 1px 5px 7.5px #C4C4C433;
+    display: flex;
+    text-align: center;
+}
 
-.service-feature1 .des-box:hover {
-  background-image: linear-gradient(to left, rgba(247, 228, 205, 0.95), rgba(250, 247, 134, 0.95)); }
-
-/*#endregion service-feature1*/
+.service-feature-grid .des-box:hover {
+    background-image: linear-gradient(to left, rgba(247, 228, 205, 0.95), rgba(250, 247, 134, 0.95));
+}*/
+/*#endregion service-feature-grid*/
 /*#endregion Services*/
 /*#region business-features */
-.business-features .row, .service-card-grid .row {
-  margin-right: 0;
-  margin-left: 0; }
-
+/*.business-features .row, .service-card-grid .row {
+    margin-right: 0;
+    margin-left: 0;
+}*/
 /*#endregion business-features*/
 /*#region business-scope */
-.business-scope .row {
-  margin-right: 0;
-  margin-left: 0; }
+/*.business-scope .row {
+    margin-right: 0;
+    margin-left: 0;
+}
 
 .business-scope .row .card {
-  border: 0; }
+    border: 0;
+}
 
 .business-scope img {
-  padding: 5em; }
-
+    padding: 5em;
+}*/
 /*#endregion business-scope*/
 /*#region feature-set1 */
-#feature-set1, #feature-how-to-use {
-  /*background: linear-gradient( rgb(96,96,96) ),url(../img/banner360x514.jpg) no-repeat;*/
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner360x514.jpg) no-repeat;
-  /*background: url(../img/banner360x514.jpg) no-repeat;*/
-  background-size: cover;
-  background-attachment: fixed;
-  color: #ddd;
-  padding: 80px 0;
-  /*opacity: 8;*/
-  margin: 0 -8px 0 -8px; }
+/*#feature-set1, #feature-how-to-use {*/
+/*background: linear-gradient( rgb(96,96,96) ),url(../img/banner360x514.jpg) no-repeat;*/
+/*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner360x514.jpg) no-repeat;*/
+/*background: url(../img/banner360x514.jpg) no-repeat;*/
+/*background-size: cover;
+    background-attachment: fixed;
+    color: #ddd;
+    padding: 80px 0;*/
+/*opacity: 8;*/
+/*margin: 0 -8px 0 -8px;
+}
 
-#feature-set1:hover, #feature-how-to-use:hover {
-  /*fallback - background for browsers that doesn't support rgba*/
-  background: linear-gradient(#606060), url(../img/banner360x514.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 1, 0.5), black), url(../img/banner360x514.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+#feature-set1:hover, #feature-how-to-use:hover {*/
+/*fallback - background for browsers that doesn't support rgba*/
+/*background: linear-gradient( rgb(96,96,96) ), url(../img/banner360x514.jpg) no-repeat;
+    background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../img/banner360x514.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 #feature-set1 .card, #feature-how-to-use .card {
-  background: transparent; }
+    background: transparent;
+}
 
 #feature-set1 h1, #feature-how-to-use h1 {
-  color: #fff; }
-
+    color: #fff;
+}*/
 /*#endregion feature-set1*/
 /*#region misc */
 /*.section-divider {
@@ -399,16 +411,19 @@ p {
 */
   /*#endregion carousel */
   /*#region feature-set1 */
-  #feature-set1, #feature-how-to-use {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner576x563.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0 -8px 0 -8px; }
-  #feature-set1:hover, #feature-how-to-use:hover {
-    background: linear-gradient(#606060), url(../img/banner576x563.jpg) no-repeat;
-    background: linear-gradient(rgba(0, 0, 1, 0.5), black), url(../img/banner576x563.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed; }
+  /*#feature-set1, #feature-how-to-use {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner576x563.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0 -8px 0 -8px;
+    }
+
+    #feature-set1:hover, #feature-how-to-use:hover {
+        background: linear-gradient( rgb(96,96,96) ), url(../img/banner576x563.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../img/banner576x563.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }*/
   /*#endregion feature-set1*/ }
 
 @media (min-width: 576px) {
@@ -493,41 +508,49 @@ p {
 */
   /*#endregion Carousel */
   /*#region Feature-set1 */
-  #feature-set1, #feature-how-to-use {
-    /*background: linear-gradient( rgb(96,96,96) ),url(../img/banner768x750.jpg) no-repeat;*/
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner768x750.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0 -25px 0 -25px; }
-  #feature-set1:hover, #feature-how-to-use:hover {
-    /*fallback - background for browsers that doesn't support rgba*/
-    background: linear-gradient(#606060), url(../img/banner768x750.jpg) no-repeat;
-    background: linear-gradient(rgba(0, 0, 1, 0.5), black), url(../img/banner768x750.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed; }
+  /*#feature-set1, #feature-how-to-use {*/
+  /*background: linear-gradient( rgb(96,96,96) ),url(../img/banner768x750.jpg) no-repeat;*/
+  /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner768x750.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0 -25px 0 -25px;
+    }
+
+    #feature-set1:hover, #feature-how-to-use:hover {*/
+  /*fallback - background for browsers that doesn't support rgba*/
+  /*background: linear-gradient( rgb(96,96,96) ), url(../img/banner768x750.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../img/banner768x750.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }*/
   /*#endregion feature-sert1*/
   /*#region Services */
   /*#region business-services1-grid1 */
-  #sctn-business-services1 {
-    padding: 1em; }
-  #sctn-business-services1 .row {
-    padding-bottom: 5em; }
-  .motion-picture1 {
-    padding-left: 5px;
-    animation: fadeInTopRight 2s ease; }
+  /*#section-business-services1 {
+        padding: 1em;
+    }
+
+    #section-business-services1 .row {
+        padding-bottom: 5em;
+    }
+
+    .motion-picture1 {
+        padding-left: 5px;
+        animation: fadeInTopRight 2s ease;
+    }*/
   /*#endregion business-services1-grid1*/
-  /*#region service2 */
-  /*#endregion service2*/
   /*#region service-packages */
-  .service-packages .card-deck .card {
-    min-width: 33%;
-    margin-bottom: 1em; }
+  /*.service-packages .card-deck .card {
+        min-width: 33%;
+        margin-bottom: 1em;
+    }*/
   /*#endregion service-packages*/
   /*#endregion Services*/
   /*#region business-scope */
-  .business-scope .card {
-    min-width: 32%;
-    margin-bottom: 1em; }
+  /*.business-scope .card {
+        min-width: 32%;
+        margin-bottom: 1em;
+    }*/
   /*#endregion business-scope*/
   /*#region custom footer */
   /*    .footer-wrapper {
@@ -595,31 +618,27 @@ p {
     }
 */
   /*#endregion Carousel */
-  /*#region Services */
-  /*#region service-packages */
-  /*#endregion service-packages*/
-  /*#region business-services1-grid1 */
-  /*#endregion business-services1-grid1*/
-  /*#region service2 */
-  /*#endregion service2*/
-  /*#endregion Services*/
   /*#region business-scope */
-  .business-scope img {
-    padding: 1em; }
+  /*.business-scope img {
+        padding: 1em;
+    }*/
   /*#endregion business-scope*/
   /*#region Feature-set1 */
-  #feature-set1, #feature-how-to-use {
-    background: linear-gradient(#606060), url(../img/banner992x750.jpg) no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner992x750.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0 -45px 0 -45px; }
-  #feature-set1:hover, #feature-how-to-use:hover {
-    /*fallback - background for browsers that doesn't support rgba*/
-    background: linear-gradient(#606060), url(../img/banner992x750.jpg) no-repeat;
-    background: linear-gradient(rgba(0, 0, 1, 0.5), black), url(../img/banner992x750.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed; }
+  /*#feature-set1, #feature-how-to-use {
+        background: linear-gradient( rgb(96,96,96) ),url(../img/banner992x750.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner992x750.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0 -45px 0 -45px;
+    }
+
+    #feature-set1:hover, #feature-how-to-use:hover {*/
+  /*fallback - background for browsers that doesn't support rgba*/
+  /*background: linear-gradient( rgb(96,96,96) ), url(../img/banner992x750.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../img/banner992x750.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }*/
   /*#endregion Feature-set1 */
   /*#region custom footer */
   /*    .footer-wrapper {
@@ -689,29 +708,25 @@ p {
         font-size: 20px !important;
     }*/
   /*#endregion Navbar*/
-  /*#region Carousel */
-  /*#endregion Carousel */
-  /*#region Services */
-  /*#region business-services1-grid1 */
-  /*#endregion business-services1-grid1*/
-  /*#region service2 */
-  /*#endregion service2*/
-  /*#endregion Services*/
   /*#region business-scope */
-  .business-scope img {
-    padding: 0.1em; }
+  /*.business-scope img {
+        padding: 0.1em;
+    }*/
   /*#endregion business-scope*/
   /*#region feature-set1 */
-  #feature-set1, #feature-how-to-use {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner1200x750.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0 -55px 0 -55px; }
-  #feature-set1:hover, #feature-how-to-use:hover {
-    background: linear-gradient(#606060), url(../img/banner1200x750.jpg) no-repeat;
-    background: linear-gradient(rgba(0, 0, 1, 0.5), black), url(../img/banner1200x750.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed; }
+  /*#feature-set1, #feature-how-to-use {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner1200x750.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0 -55px 0 -55px;
+    }
+
+    #feature-set1:hover, #feature-how-to-use:hover {
+        background: linear-gradient( rgb(96,96,96) ), url(../img/banner1200x750.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../img/banner1200x750.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }*/
   /*#endregion feature-set1*/
   /*#region custom footer */
   /*    .footer-wrapper {
@@ -754,41 +769,46 @@ p {
     }*/
   /*#endregion Site Defaults */
   /*#region navbar */
-  .navbar .container, .navbar-brand, .nav-link {
-    font-size: 23px; }
-  .nav-height-shrink {
-    min-height: 62px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
-    font-size: 21px !important; }
+  /*    .navbar .container, .navbar-brand, .nav-link {
+        font-size: 23px;
+    }
+
+    .nav-height-shrink {
+        min-height: 62px;
+    }
+
+    .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+        font-size: 21px !important;
+    }
+*/
   /*#endregion navbar*/
-  /*#region Carousel */
-  /*#endregion Carousel */
   /*#region Services */
-  /*#region business-services1-grid1 */
-  /*#endregion business-services1-grid1*/
-  /*#region service2 */
-  /*#endregion service2*/
   /*#region service-packages */
-  .service-packages .card-deck .card {
-    min-width: 22%; }
+  /*.service-packages .card-deck .card {
+        min-width: 22%;
+    }*/
   /*#endregion service-packages*/
   /*#endregion Services*/
   /*#region feature-set1 */
-  #feature-set1, #feature-how-to-use {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner1980x1238.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0 -70px 0 -70px; }
-  #feature-set1:hover, #feature-how-to-use:hover {
-    background: linear-gradient(#606060), url(../img/banner1980x1238.jpg) no-repeat;
-    background: linear-gradient(rgba(0, 0, 1, 0.5), black), url(../img/banner1980x1238.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed; }
+  /*#feature-set1, #feature-how-to-use {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner1980x1238.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0 -70px 0 -70px;
+    }
+
+    #feature-set1:hover, #feature-how-to-use:hover {
+        background: linear-gradient( rgb(96,96,96) ), url(../img/banner1980x1238.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../img/banner1980x1238.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }*/
   /*#endregion feature-set1*/
   /*#region misc */
-  .section-divider {
-    padding-top: 2em;
-    padding-bottom: 2em; }
+  /*.section-divider {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }*/
   /*#endregion misc*/
   /*#region custom footer */
   /*    .footer-wrapper {
@@ -816,32 +836,32 @@ p {
     }*/
   /*#endregion Site Defaults */
   /*#region navbar */
-  .navbar .container, .navbar-brand, .nav-link {
-    font-size: 24px; }
-  .nav-height-shrink {
-    min-height: 64px; }
-  .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
-    font-size: 22px !important; }
+  /*    .navbar .container, .navbar-brand, .nav-link {
+        font-size: 24px;
+    }
+
+    .nav-height-shrink {
+        min-height: 64px;
+    }
+
+    .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+        font-size: 22px !important;
+    }*/
   /*#endregion navbar*/
-  /*#region Carousel */
-  /*#endregion Carousel */
-  /*#region Services */
-  /*#region business-services1-grid1 */
-  /*#endregion business-services1-grid1*/
-  /*#region service2 */
-  /*#endregion service2*/
-  /*#endregion Services*/
   /*#region feature-set1 */
-  #feature-set1, #feature-how-to-use {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner-rest.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0 -84px 0 -84px; }
-  #feature-set1:hover, #feature-how-to-use:hover {
-    background: linear-gradient(#606060), url(../img/banner-rest.jpg) no-repeat;
-    background: linear-gradient(rgba(0, 0, 1, 0.5), black), url(../img/banner-rest.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed; }
+  /*#feature-set1, #feature-how-to-use {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner-rest.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0 -84px 0 -84px;
+    }
+
+    #feature-set1:hover, #feature-how-to-use:hover {
+        background: linear-gradient( rgb(96,96,96) ), url(../img/banner-rest.jpg) no-repeat;
+        background: linear-gradient( rgba(0, 0, 1, 0.5), black ), url(../img/banner-rest.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }*/
   /*#endregion feature-set1*/
   /*#region custom footer */
   /*    .footer-wrapper {

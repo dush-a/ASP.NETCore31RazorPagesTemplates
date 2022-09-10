@@ -1,0 +1,162 @@
+﻿@import '../../DefaultBreakPoints.scss';
+
+
+/*#region Defaults and below $bp320-xx-small */
+
+/*#region section-business-services1 */
+
+#section-business-services1 {
+    padding-top: 1em;
+}
+
+#section-business-services1 .row {
+    padding-top: 1em;
+    padding-bottom: 5em;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.business-services1-grid1 {
+    padding: 0.1em 0 0.1em 0;
+}
+
+.motion-picture1 {
+    text-align: center;
+    padding-top: 5em;
+    animation: fadeInTopRight 2s ease;
+}
+
+/*#endregion section-business-services1 */
+
+/*#region business-features */
+
+.business-features .row, .service-card-grid .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/*#endregion business-features*/
+
+/*#region business-scope */
+.business-scope .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.business-scope .row .card {
+    border: 0;
+}
+
+.business-scope img {
+    padding: 5em;
+}
+
+/*#endregion business-scope*/
+
+/*#endregion */
+
+@media (min-width: $bp320-xx-small) {
+    /* 20*16px = 320px */
+}
+
+@media (min-width: $bp480-x-small) {
+    /* 30*16px = 480px */
+}
+
+@media (min-width: $bp576-small) {
+    /* 36*16px = 576px */
+
+    /*#region section-business-services1 */
+    #section-business-services1 {
+        padding: 1em;
+    }
+
+    #section-business-services1 .row {
+        padding-bottom: 5em;
+    }
+
+    .motion-picture1 {
+        padding-left: 5px;
+        animation: fadeInTopRight 2s ease;
+    }
+    /*#endregion section-business-services1 */
+
+    /*#region business-scope */
+
+    .business-scope .card {
+        min-width: 32%;
+        margin-bottom: 1em;
+    }
+
+
+    /*#endregion business-scope*/
+
+    /*#region service-packages */
+
+    .service-packages .card-deck .card {
+        min-width: 33%;
+        margin-bottom: 1em;
+    }
+
+    /*#endregion service-packages*/
+}
+
+@media (min-width: $bp768-medium) {
+    /*  48*16px = 768px */
+    /*#region business-scope */
+
+    .business-scope img {
+        padding: 1em;
+    }
+
+    /*#endregion business-scope*/
+}
+
+@media (min-width: $bp992-large) {
+    /* 62*16px = 992px */
+
+    /*#region business-scope */
+
+    .business-scope img {
+        padding: 0.1em;
+    }
+
+    /*#endregion business-scope*/
+}
+
+@media (min-width: $bp1200-x-large) {
+    /* 75*16px = 1200px */
+    /*#region service-packages */
+
+    .service-packages .card-deck .card {
+        min-width: 22%;
+    }
+
+    /*#endregion service-packages*/
+}
+
+@media (min-width: $bp1400-xx-large) {
+    /* 87.5*16px = 1400px */
+}
+
+@media (min-width: $bp1680-xxx-large) {
+    /* 105*16px = 1680px */
+}
+
+@media (min-width: $bp1920-hd) {
+    /* 120*16px = 1920px */
+}
+
+@media (min-width: $bp2560-ultrasharp) {
+    /* 160*16px = 2560px */
+}
+
+@media (min-width: $bp3840-uhd-4k) {
+    /* 240*16px = 3840px */
+
+}
+
+@media (min-width: $bp7680-uhd-8k) {
+    /* 480*16px = 7680px */
+
+}

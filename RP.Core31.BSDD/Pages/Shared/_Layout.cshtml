@@ -52,18 +52,24 @@
 
 </head>
 <body>
+    <environment include="Development">
+        <div class="sticky-header">
+            <div class="guide-item"><span class="viewport-width">px</span> &nbsp;X&nbsp;<span class="viewport-height">px</span></div>
+        </div>
+    </environment>
+
     <header class="fixed-top">
         <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-dark bg-our-color border-bottom box-shadow mb-3">
             <div class="container-fluid home-top-nav">
                 <div id="logo" class="logo">
-                    <span class="brand-logo"><img class="img-fluid" src="~/themes/HoverDD/img/logo.png" /><a class="navbar-brand flex-grow-1" asp-area="" asp-page="/Index"> @optnBusiness.BusinessName</a></span>
+                    <span class="brand-logo"><img class="img-fluid" src="~/themes/HoverDD/img/logo.png" alt="logo" /><a class="navbar-brand flex-grow-1" asp-area="" asp-page="/Index"> @optnBusiness.BusinessName</a></span>
                     @*<a class="navbar-brand flex-grow-1" asp-area="" asp-page="/Index"><img class="img-fluid" src="~/themes/HoverDD/img/logo.png" /> @optnBusiness.BusinessName</a>*@
-                    <environment include="Development"><div class="guide-item"><span class="viewport-width">px</span> &nbsp;X&nbsp;<span class="viewport-height">px</span></div></environment>
+                    @*<environment include="Development"><div class="guide-item"><span class="viewport-width">px</span> &nbsp;X&nbsp;<span class="viewport-height">px</span></div></environment>*@
                 </div>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+
+                <button class="navbar-toggler threebar-icon" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
                 @*<div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">*@
                 <div class="navbar-collapse collapse d-md-inline-flex">
@@ -80,7 +86,7 @@
                         <li class="nav-item dropdown @Html.ActiveClass("/")">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdownMenuAboutLink" aria-haspopup="true" aria-expanded="false">  About  </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuAboutLink">
-                                <li><a class="nav-link"  href="#">Action</a></li>
+                                <li><a class="nav-link" href="#">Action</a></li>
                                 <li class=" @Html.ActiveClass("/About")">
                                     <a class="nav-link text-light " asp-area="" asp-page="/About">About</a>
                                 </li>
@@ -112,9 +118,12 @@
     <partial name="_Footer" />
     <partial name="_MicroDataMain" />
 
-    <div class="sticky-footer">
-        <environment include="Development"><div class="dev-col"><span class="show-menu-break-point-text"></span></div></environment>
-    </div>
+    <environment include="Development">
+        <div class="sticky-footer">
+            <div class="dev-col"><span class="show-menu-break-point-text"></span></div>
+        </div>
+    </environment>
+
 
     <environment include="Development">
         <script src="~/lib/jquery/3.4.1/jquery.js"></script>

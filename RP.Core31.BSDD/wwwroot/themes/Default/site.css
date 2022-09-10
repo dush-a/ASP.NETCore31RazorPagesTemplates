@@ -276,11 +276,11 @@ li.nav-item {
 
 /*#region business-services1-grid1 */
 
-#sctn-business-services1 {
+#section-business-services1 {
     padding-top: 1em;
 }
 
-    #sctn-business-services1 .row {
+    #section-business-services1 .row {
         padding-top: 1em;
         padding-bottom: 5em;
         margin-right: -8px;
@@ -302,13 +302,13 @@ li.nav-item {
 
 /*#endregion service2*/
 
-/*#region service-feature1 */
+/*#region service-feature-grid */
 
-.service-feature1 {
+.service-feature-grid {
     background-color: #fafafa;
 }
 
-    .service-feature1 .col-adjust {
+    .service-feature-grid .col-adjust {
         margin-bottom: 2em;
     }
 
@@ -316,15 +316,15 @@ li.nav-item {
     padding: 2em;
 }
 
-.service-feature1 .des-box a {
+.service-feature-grid .des-box a {
     color: black;
 }
 
-.service-feature1 .feature-img {
+.service-feature-grid .feature-img {
     color: #e13837;
 }
 
-.service-feature1 .des-box {
+.service-feature-grid .des-box {
     transition: 0.3s ease-in;
     border: 1px solid #fafafa;
     border-radius: 6px;
@@ -335,10 +335,10 @@ li.nav-item {
     text-align: center;
 }
 
-    .service-feature1 .des-box:hover {
+    .service-feature-grid .des-box:hover {
         background-image: linear-gradient(to left, rgba(247, 228, 205, 0.95), rgba(250, 247, 134, 0.95));
     }
-/*#endregion service-feature1*/
+/*#endregion service-feature-grid*/
 
 /*#endregion Services*/
 
@@ -641,11 +641,11 @@ li.nav-item {
 
     /*#region business-services1-grid1 */
 
-    #sctn-business-services1 {
+    #section-business-services1 {
         padding: 1em;
     }
 
-        #sctn-business-services1 .row {
+        #section-business-services1 .row {
             padding-bottom: 5em;
         }
 

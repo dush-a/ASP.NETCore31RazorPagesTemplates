@@ -51,13 +51,14 @@ $navMainShrinkFontSize: 15px;
 
 @mixin mixin-AdjustTopMenu($navHight, $navHightShrinkMin, $navMainFontSize, $navMainShrinkFontSize, $navMainShrinkFontWeight) {
     /* Usage: @include mixin-AdjustTopMenu(80px, 50px, 16px, 15px, 300);*/
-       
+
     .nav-height {
         min-height: $navHight;
     }
 
     .nav-height-shrink {
-        min-height: $navHightShrinkMin;
+        /*min-height: $navHightShrinkMin;*/
+        max-height: $navHightShrinkMin;
     }
 
     .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
@@ -68,7 +69,7 @@ $navMainShrinkFontSize: 15px;
         font-size: $navMainFontSize;
     }
 
-    .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink {
+    .navbar-brand-shrink, .nav-link-shrink, .navbar-toggler-shrink, .brand-logo-shrink {
         font-size: $navMainShrinkFontSize !important;
         font-weight: $navMainShrinkFontWeight;
     }
@@ -84,7 +85,7 @@ $navMainShrinkFontSize: 15px;
 
 .nav-height-shrink {
     min-height: $navHightShrinkMin;
-    padding: -15px;
+  
     transition: all 0.5s ease;
 }
 
@@ -112,6 +113,34 @@ $navMainShrinkFontSize: 15px;
     padding: 0.2rem;
 }
 
+.navbar-toggler-icon-shrink{
+    color:#b2edfb ;
+
+}
+
+.threebar-icon-shrink {
+    border-color: #25b004;
+    /* padding: 0.0925rem 0.0975rem;*/
+    font-size: $navMainShrinkFontSize;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+   /* justify-content: start;
+    align-items: self-start;*/
+   margin-top: -40px;
+}
+/*
+.threebar-icon-shrink{
+    width:1em;
+    height:1em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 80% 80%;
+}
+*/
+
 a.navbar-brand {
     white-space: normal;
     text-align: center;
@@ -126,19 +155,36 @@ li.nav-item {
     margin-right: 1.75rem !important;
 }
 
-.logo {
 
-/*    img {
-        margin-top: -35px;
-        margin-bottom: -35px;
-    }*/
+.brand-logo-shrink {
+    font-size: $navMainShrinkFontSize !important;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+
 }
+
+/*.logo {
+
+    a.brand-logo-shrink {
+        font-size: $navMainShrinkFontSize !important;*/
+        /*font-weight: 100;*/
+        /*white-space: normal;*/
+        /*text-align: center;*/
+        /*word-break: break-all;
+        justify-content: center;
+        align-items: center;
+    }
+}*/
 
 .brand-logo {
+
     display: inline-flex;
- /*   justify-content: center;
+    /*   justify-content: center;
     align-items: center;*/
 }
+
+
 
 /*#endregion Navbar < 576px */
 
@@ -146,7 +192,6 @@ li.nav-item {
 @media (min-width: 576px) {
 
     @include mixin-AdjustTopMenu(110px, 55px, 18px, 17px, 200);
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -177,15 +222,9 @@ li.nav-item {
     .adjust-right-ddl {
         margin-right: 2.15rem !important;
     }
-    .home-top-nav a.navbar-brand {
-        display: none !important;
-    }
 
-    .logo {
-        /*    img {
-        margin-top: -35px;
-        margin-bottom: -35px;
-    }*/
+    .home-top-nav a.navbar-brand, a.brand-logo-shrink {
+        display: none !important;
     }
 
     .brand-logo {
@@ -203,8 +242,18 @@ li.nav-item {
     .home-top-nav a, .navbar-default .navbar-nav > li > a, .home-top-nav ul li a, .navbar-expand-lg .navbar-nav .nav-link, .navbar > li > a {
         padding: 7px 8px;
     }
+
     .home-top-nav a.navbar-brand {
-        display:inline !important;
+       /* display: inline !important;*/
+        display: inline-flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-top-nav a.brand-logo-shrink {
+        display: inline-flex !important;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -212,6 +261,7 @@ li.nav-item {
 
     @include mixin-AdjustTopMenu(110px, 55px, 23px, 21px, 300);
     @include mixin-AdjustTopMenuDropDown(290px, 290px);
+
     .adjust-right-ddl {
         margin-right: 2.5rem !important;
     }
@@ -252,6 +302,3 @@ li.nav-item {
     @include mixin-AdjustTopMenu(116px, 60px, 30px, 24px, 400);
     @include mixin-AdjustTopMenuDropDown(400px, 400px);
 }
-
-
-

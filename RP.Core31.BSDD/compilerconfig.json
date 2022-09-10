@@ -10,5 +10,9 @@
   {
     "outputFile": "wwwroot/themes/HoverDD/StyleSheet.css",
     "inputFile": "wwwroot/themes/HoverDD/StyleSheet.scss"
+  },
+  {
+    "outputFile": "wwwroot/themes/HoverDD/pages/IndexStyle.css",
+    "inputFile": "wwwroot/themes/HoverDD/pages/IndexStyle.scss"
   }
 ]

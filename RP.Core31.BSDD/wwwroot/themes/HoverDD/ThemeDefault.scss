@@ -2,7 +2,7 @@
 
 /*#region Site Defaults */
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body {
@@ -203,10 +203,20 @@ p {
 
 @media (min-width: $bp320-xx-small) {
     /* 20*16px = 320px */
+    /*#region Site Defaults */
+    html {
+        font-size: 15px;
+    }
+    /*#endregion Site Defaults */
 }
 
 @media (min-width: $bp480-x-small) {
     /* 30*16px = 480px */
+    /*#region Site Defaults */
+    html {
+        font-size: 16px;
+    }
+    /*#endregion Site Defaults */
 }
 
 @media (min-width: $bp576-small) {

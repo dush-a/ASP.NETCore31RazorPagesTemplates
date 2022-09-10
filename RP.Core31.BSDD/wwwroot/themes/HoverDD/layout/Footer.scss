@@ -1,13 +1,11 @@
 ﻿@import '../DefaultBreakPoints.scss';
 @import '../scssFunctions.scss';
 
-/* Use this template to add new scss file for the project */
-
 /*#region Defaults and below $bp320-xx-small */
 
 .footer-wrapper {
     padding: 3em 0.5em 2em 0.5em;
-    background-color: #31002d;
+    background-color: #042801; /* #31002d;*/
     /*clip-path: polygon(0 115px, 100% 0, 100% 100%, 0% 100%); 
     */
 }

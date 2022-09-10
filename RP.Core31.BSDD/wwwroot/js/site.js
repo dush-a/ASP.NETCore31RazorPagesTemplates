@@ -19,10 +19,15 @@ $(document).ready(function () {
                 $("nav").removeClass("nav-height");
                 $("nav").addClass("nav-height-shrink");
 
+                $("nav .home-top-nav .logo a").removeClass("navbar-brand");
+                $("nav .home-top-nav .logo a").addClass("brand-logo-shrink");
 
-                $("nav .container > a").removeClass("navbar-brand");
-                $("nav .container > a").addClass("navbar-brand-shrink");
+                $("nav .home-top-nav button").removeClass("threebar-icon");
+                $("nav .home-top-nav button").addClass("threebar-icon-shrink");
+                //$("nav .container > a").removeClass("navbar-brand");
+                //$("nav .container > a").addClass("navbar-brand-shrink");
                 $("nav a.logo").addClass("logo-link-shrink");
+
                 $("nav li > a").removeClass("nav-link");
                 $("nav li > a").addClass("nav-link-shrink");
 
@@ -31,9 +36,16 @@ $(document).ready(function () {
                 $("nav").addClass("nav-height");
                 $("nav").removeClass("nav-height-shrink");
 
-                $("nav .container > a").addClass("navbar-brand");
-                $("nav .container > a").removeClass("navbar-brand-shrink");
+                $("nav .home-top-nav .logo a").addClass("navbar-brand");
+                $("nav .home-top-nav .logo a").removeClass("brand-logo-shrink");
+
+                $("nav .home-top-nav button").addClass("threebar-icon");
+                $("nav .home-top-nav button").removeClass("threebar-icon-shrink");
+
+                //$("nav .container > a").addClass("navbar-brand");
+                //$("nav .container > a").removeClass("navbar-brand-shrink");
                 $("nav a.logo").removeClass("logo-link-shrink");
+
                 $("nav li > a").addClass("nav-link");
                 $("nav li > a").removeClass("nav-link-shrink");
 

@@ -55,6 +55,23 @@ $breakpt_display_font_size: 0.727374em;//0.8rem;
     
 }
 
+.sticky-header {
+    position: fixed;
+    top: 0px;
+    left: 8px;
+    z-index: 1031;
+
+    .guide-item {
+        padding: 0.1rem 0.5rem;
+        background: #000000;
+        color: white;
+
+        .viewport-width, .viewport-height {
+            color: white;
+        }
+    }
+}
+
 .sticky-footer {
     position: fixed;
     bottom: 0px;
@@ -107,7 +124,7 @@ $breakpt_display_font_size: 0.727374em;//0.8rem;
 
 @media (min-width: $bp576-small) {
     /* 36*16px = 576px */
-    $breakpt_display_font: 0.6rem;
+    $breakpt_display_font: 0.8rem;
 
     .design-test-guide, .new-design-test-guide, .dtg {
         grid-template-columns: repeat(2, 1fr);
@@ -202,7 +219,7 @@ $breakpt_display_font_size: 0.727374em;//0.8rem;
 @media (min-width: $bp1200-x-large) {
     /* 75*16px = 1200px */
 
-    $breakpt_display_font: 0.8rem;
+    $breakpt_display_font: 0.9rem;
 
     .new-design-test-guide, .design-test-guide, .dtg {
         // grid-template-columns: repeat(4, 1fr);
