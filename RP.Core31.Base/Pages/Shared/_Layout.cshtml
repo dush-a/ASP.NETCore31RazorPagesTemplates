@@ -3,6 +3,7 @@
 @inject IOptions<BusinessInfo> businessOptions
 @{
     var optnBusiness = businessOptions.Value;
+    var viewdata = @ViewData["Title"] ?? "";
 }
 <!DOCTYPE html>
 <html lang="en-au">
@@ -10,19 +11,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="business" content="@optnBusiness.BusinessName @optnBusiness.ABN" />
-    <title>
-
-        @{
-            if (ViewData["Title"] != null & ViewData["Title"].ToString().Trim() != "")
-            {
-                @optnBusiness.BusinessName @ViewData["Title"];
-            }
-            else
-            {
-                @optnBusiness.BusinessName
-            }
-        }
-    </title>
+    <title> @optnBusiness.BusinessName  @viewdata    </title>
     @RenderSection("MetaTags", required: false)
 
     <environment include="Development">

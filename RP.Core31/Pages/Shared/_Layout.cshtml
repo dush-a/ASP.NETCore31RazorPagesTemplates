@@ -3,6 +3,7 @@
 @inject IOptions<BusinessInfo> businessOptions
 @{
     var optnBusiness = businessOptions.Value;
+    var viewdata = @ViewData["Title"] ?? "";
 }
 <!DOCTYPE html>
 <html lang="en-au">
@@ -11,17 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="business" content="@optnBusiness.BusinessName @optnBusiness.ABN" />
     <title>
-
-        @{
-            if (ViewData["Title"] != null & ViewData["Title"].ToString().Trim() != "")
-            {
-                @optnBusiness.BusinessName @ViewData["Title"];
-            }
-            else
-            {
-                @optnBusiness.BusinessName
-            }
-        }
+        @optnBusiness.BusinessName  @viewdata
     </title>
     @RenderSection("MetaTags", required: false)
 
@@ -40,10 +31,12 @@
               integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA=="
               crossorigin="anonymous" referrerpolicy="no-referrer"
               asp-fallback-href="~/lib/font-awesome/5.10.2/css/all.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" 
-              integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" 
-              crossorigin="anonymous" referrerpolicy="no-referrer"
-              asp-fallback-href="~/lib/bootstrap/4.5.3/css/bootstrap.min.css" />
+        @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css"
+        integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"
+        asp-fallback-href="~/lib/bootstrap/4.5.3/css/bootstrap.min.css" />*@
+        <link rel="stylesheet" href="~/lib/bootstrap/4.5.3/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/4.5.3/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 
@@ -109,12 +102,18 @@
                 asp-fallback-src="~/lib/font-awesome/5.10.2/js/all.js"
                 asp-fallback-test="window.jQuery">
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.bundle.min.js"
+        @*<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.bundle.min.js"
                 integrity="sha512-iceXjjbmB2rwoX93Ka6HAHP+B76IY1z0o3h+N1PeDtRSsyeetU3/0QKJqGyPJcX63zysNehggFwMC/bi7dvMig=="
                 crossorigin="anonymous" referrerpolicy="no-referrer"
                 asp-fallback-src="~/lib/bootstrap/4.5.3/js/bootstrap.bundle.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>*@
+
+        <script src="~/lib/bootstrap/4.5.3/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/4.5.3/js/bootstrap.bundle.min.js"
+                >
         </script>
+
         <script src="~/js/viewportSize.min.js"></script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
